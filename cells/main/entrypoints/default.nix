@@ -13,9 +13,9 @@ in
     name = "mkdoc";
     runtimeInputs = [ nixpkgs.hugo ];
     text = ''
-    cp -rf --no-preserve=mode,ownership ${org-roam-book} "$PRJ_ROOT"/docs/publish
-    chmod +rw "$PRJ_ROOT"/docs/publish
-    cd "$PRJ_ROOT"/docs/publish && cp ../config.toml .
+    cp -rf --no-preserve=mode,ownership ${org-roam-book} docs/publish
+    chmod +rw docs/publish
+    cd docs/publish && cp ../config.toml .
     hugo
     cp -rf --no-preserve=mode,ownership public/posts/index.html ./public/
     '';
