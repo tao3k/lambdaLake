@@ -5,3 +5,4 @@ tmp/
 
 .std/
 docs/publish
+.cache
