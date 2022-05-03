@@ -15,5 +15,41 @@
       <description>MISP </description>
     </item>
     
+    <item>
+      <title>Opencti</title>
+      <link>https://gtrunsec.github.io/huntingCells/posts/opencti/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gtrunsec.github.io/huntingCells/posts/opencti/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Soc Aciton</title>
+      <link>https://gtrunsec.github.io/huntingCells/posts/soc-aciton/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gtrunsec.github.io/huntingCells/posts/soc-aciton/</guid>
+      <description>Github Action  Zeek Action  </description>
+    </item>
+    
+    <item>
+      <title>Tenzir</title>
+      <link>https://gtrunsec.github.io/huntingCells/posts/tenzir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gtrunsec.github.io/huntingCells/posts/tenzir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zeek</title>
+      <link>https://gtrunsec.github.io/huntingCells/posts/zeek/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gtrunsec.github.io/huntingCells/posts/zeek/</guid>
+      <description>Zeek Action </description>
+    </item>
+    
   </channel>
 </rss>
