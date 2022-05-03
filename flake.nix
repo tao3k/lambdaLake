@@ -20,9 +20,6 @@
 
     org-roam-book-template.url = "github:gtrunsec/org-roam-book-template";
     org-roam-book-template.inputs.nixpkgs.follows = "nixpkgs";
-
-    org.url = "path:./docs/org";
-    org.flake = false;
   };
 
   inputs = {
@@ -30,12 +27,11 @@
     zeek2nix.url = "github:hardenedlinux/zeek2nix";
     threatbus2nix.url = "github:gtrunsec/threatbus2nix";
 
-    nixpkgs-hardenedlinux.url = "github:hardenedlinux/nixpkgs-hardenedlinux";
-    nixpkgs-hardenedlinux.inputs.nixpkgs.follows = "nixpkgs";
+    nixpkgs-hardienedlinux.url = "github:hardenedlinux/nixpkgs-hardenedlinux";
   };
 
   outputs = {std, ...} @ inputs:
-    std.grow {
+    std.growOn {
       inherit inputs;
       cellsFrom = ./cells;
 
@@ -62,5 +58,9 @@
         (std.data "cargoMakeJobs")
         (std.data "waterwheelJobs")
       ];
+    } {
+        packages.x86_64-linux.mkdoc =  inputs.org-roam-book-template.packages.x86_64-linux.default.override {
+            org = ./docs/org;
+        };
     };
 }

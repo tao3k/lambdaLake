@@ -3,11 +3,8 @@
   cell,
 }: let
   l = nixpkgs.lib // builtins;
-  inherit (inputs) nixpkgs std;
+  inherit (inputs) nixpkgs std self;
   withCategory = category: attrset: attrset // {inherit category;};
-  org-roam-book = inputs.org-roam-book-template.packages.${nixpkgs.system}.default.override {
-    org = inputs.org;
-  };
 in
   l.mapAttrs (_: std.std.lib.mkShell) {
     default = {
@@ -29,16 +26,6 @@ in
       commands = [
         (withCategory "hexagon" {package = nixpkgs.treefmt;})
         # (withCategory "hexagon" {package = nixpkgs.colmena;})
-        {
-          name = "mkdoc";
-          command = ''
-            cp -rf ${org-roam-book} $PRJ_ROOT/docs/publish
-            chmod +rw $PRJ_ROOT/docs/publish
-            cd $PRJ_ROOT/docs/publish && cp ../config.toml .
-            hugo
-            cp -rf public/posts/index.html ./public/
-          '';
-        }
       ];
       packages = [
         # formatters
