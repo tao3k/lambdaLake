@@ -1,0 +1,4 @@
+[submodule "infra"]
+	path = infra
+	url = https://github.com/GTrunSec/cells-infra.git
+	branch = hunting
