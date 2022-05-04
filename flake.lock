@@ -9808,11 +9808,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1651282067,
-        "narHash": "sha256-+Qze3whyQXRMt3nWOiQcIFp5GFFYhxnEOzzVNhgf8oQ=",
+        "lastModified": 1651624655,
+        "narHash": "sha256-JGoevbhwua0E9XfWymSjo/YgEUVJdRfX/zoDjAKnzS0=",
         "owner": "gtrunsec",
         "repo": "org-roam-book-template",
-        "rev": "df7fb764d8f1823be3153651f6138cf7b4d8b03e",
+        "rev": "e466f45549d2c4ffa90af1940e48060be1ac4d53",
         "type": "github"
       },
       "original": {

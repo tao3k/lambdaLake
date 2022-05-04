@@ -31,7 +31,7 @@
   };
 
   outputs = {std, ...} @ inputs:
-    std.growOn {
+    std.grow {
       inherit inputs;
       cellsFrom = ./cells;
 
@@ -58,9 +58,5 @@
         (std.data "cargoMakeJobs")
         (std.data "waterwheelJobs")
       ];
-    } {
-        packages.x86_64-linux.mkdoc =  inputs.org-roam-book-template.packages.x86_64-linux.default.override {
-            org = ./docs/org;
-        };
     };
 }
