@@ -19,7 +19,6 @@
     cells-lab.url = "github:gtrunsec/DevSecOps-cells";
 
     org-roam-book-template.url = "github:gtrunsec/org-roam-book-template";
-    org-roam-book-template.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   inputs = {
