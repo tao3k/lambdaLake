@@ -14,11 +14,11 @@ in {
       name = "mkdoc";
       runtimeInputs = [nixpkgs.hugo];
       text = ''
-        cp -rf --no-preserve=mode,ownership ${org-roam-book} docs/publish
-        chmod +rw docs/publish
+        rsync -avzh ${org-roam-book}/* docs/publish
         cd docs/publish && cp ../config.toml .
         hugo
         cp -rf --no-preserve=mode,ownership public/posts/index.html ./public/
+        hugo server "$@"
       '';
     };
 }

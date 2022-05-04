@@ -120,11 +120,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1651610868,
-        "narHash": "sha256-fxvKu4eXQlMTsKX6W2HeMAhdCFBnuJ5HnTxfi+QFtTs=",
+        "lastModified": 1651613405,
+        "narHash": "sha256-tP2eu02MO45NYWoFI/5HL8x2dHDIvCMDNLCxjFqRTPY=",
         "owner": "gtrunsec",
         "repo": "DevSecOps-cells",
-        "rev": "4909b20fa3d785c6e4721dbb065c1155c81bb741",
+        "rev": "e91e67ae46a88ba4790728de88de0670865dd3f3",
         "type": "github"
       },
       "original": {
@@ -9808,11 +9808,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1651624655,
-        "narHash": "sha256-JGoevbhwua0E9XfWymSjo/YgEUVJdRfX/zoDjAKnzS0=",
+        "lastModified": 1651628481,
+        "narHash": "sha256-Oc74ZXf7hXPfeDBwBIexEwKQQeBnILg50AwugsplSZ0=",
         "owner": "gtrunsec",
         "repo": "org-roam-book-template",
-        "rev": "e466f45549d2c4ffa90af1940e48060be1ac4d53",
+        "rev": "d742e719aa84a1f9778308774ad27b40ae037c5b",
         "type": "github"
       },
       "original": {
