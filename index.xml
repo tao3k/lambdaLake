@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://gtrunsec.github.io/huntingCells/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Misp</title>
+      <title>MISP</title>
       <link>https://gtrunsec.github.io/huntingCells/posts/misp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -16,7 +16,7 @@
     </item>
     
     <item>
-      <title>Opencti</title>
+      <title>OpenCTI</title>
       <link>https://gtrunsec.github.io/huntingCells/posts/opencti/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -25,7 +25,7 @@
     </item>
     
     <item>
-      <title>Soc</title>
+      <title>SOC</title>
       <link>https://gtrunsec.github.io/huntingCells/posts/soc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -34,12 +34,12 @@
     </item>
     
     <item>
-      <title>Soc Aciton</title>
+      <title>SOC Aciton</title>
       <link>https://gtrunsec.github.io/huntingCells/posts/soc-aciton/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gtrunsec.github.io/huntingCells/posts/soc-aciton/</guid>
-      <description>Github Action  Zeek Action  </description>
+      <description> tags SOC  Github Action  Zeek Action  </description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gtrunsec.github.io/huntingCells/posts/tenzir/</guid>
-      <description></description>
+      <description>Generator Vast.yaml  namespace: vast-config-&amp;lt;state&amp;gt;  prod -&amp;gt; production     std run //tenzir//generator:config-vast-prod generating config to nixosModule of the vast services.vast.settings = inputs.data-merge.merge inputs.cells-lab.tenzir.generator.prod {  vast.endpoint = &amp;#34;192.168.1.1:4000&amp;#34;; }; generating config to NomadJobs of the vast deployNomadJobs.vast.prod = inputs.data-merge.merge inputs.cells.tenzir.generator.prod {  vast.endpoint = &amp;#34;192.168.1.1:4000&amp;#34;;  # &amp;lt;custom settings&amp;gt; };  deploy   std //tenzir//deploy:vast-prod NomadJobs Vast </description>
     </item>
     
     <item>

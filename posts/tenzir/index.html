@@ -27,7 +27,34 @@
     <div class="page" data-level="1">
       <div class="content">
         <h1>Tenzir</h1>
-        
+        <h2 id="generator">Generator</h2>
+<h3 id="vast-dot-yaml">Vast.yaml</h3>
+<ul>
+<li>namespace: vast-config-&lt;state&gt;
+<ul>
+<li>prod -&gt; production</li>
+</ul>
+</li>
+</ul>
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>std run //tenzir//generator:config-vast-prod
+</span></span></code></pre></div><h3 id="generating-config-to-nixosmodule-of-the-vast">generating config to nixosModule of the vast</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>services<span style="color:#666">.</span>vast<span style="color:#666">.</span>settings <span style="">=</span> inputs<span style="color:#666">.</span>data-merge<span style="color:#666">.</span>merge inputs<span style="color:#666">.</span>cells-lab<span style="color:#666">.</span>tenzir<span style="color:#666">.</span>generator<span style="color:#666">.</span>prod {
+</span></span><span style="display:flex;"><span>  vast<span style="color:#666">.</span>endpoint <span style="color:#666">=</span> <span style="color:#4070a0">&#34;192.168.1.1:4000&#34;</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h3 id="generating-config-to-nomadjobs-of-the-vast">generating config to NomadJobs of the vast</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>deployNomadJobs<span style="color:#666">.</span>vast<span style="color:#666">.</span>prod <span style="">=</span> inputs<span style="color:#666">.</span>data-merge<span style="color:#666">.</span>merge inputs<span style="color:#666">.</span>cells<span style="color:#666">.</span>tenzir<span style="color:#666">.</span>generator<span style="color:#666">.</span>prod {
+</span></span><span style="display:flex;"><span>  vast<span style="color:#666">.</span>endpoint <span style="color:#666">=</span> <span style="color:#4070a0">&#34;192.168.1.1:4000&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#60a0b0;font-style:italic"># &lt;custom settings&gt;</span>
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><ul>
+<li>deploy</li>
+</ul>
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>std //tenzir//deploy:vast-prod
+</span></span></code></pre></div><h2 id="nomadjobs">NomadJobs</h2>
+<h3 id="vast">Vast</h3>
+
       </div>
       
 
