@@ -1,1 +1,4 @@
-#+title: Opencti
+:PROPERTIES:
+:ID:       15517c04-2bd7-4023-ba28-a40898116a75
+:END:
+#+title: OpenCTI

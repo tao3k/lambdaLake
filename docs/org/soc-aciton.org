@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       0d463aad-184b-4efb-868d-4df971ea6a27
 :END:
-#+title: Soc Aciton
+#+title: SOC Aciton
 
+- tags :: [[id:0f10681c-fe2c-4071-bc70-6a6c3c2a1879][SOC]]
 
 * Github Action
 - [[id:c3e4bd1e-9078-45cf-995f-d0cbccf82f6a][Zeek Action]]
