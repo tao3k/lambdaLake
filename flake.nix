@@ -12,9 +12,6 @@
     yants.url = "github:divnix/yants";
     yants.inputs.nixpkgs.follows = "nixpkgs";
 
-    flake-compat.url = "github:edolstra/flake-compat";
-    flake-compat.flake = false;
-
     #cells-lab.url = "/home/gtrun/ghq/github.com/GTrunSec/DevSecOps-cells";
     cells-lab.url = "github:gtrunsec/DevSecOps-cells";
 
@@ -27,11 +24,11 @@
     zeek2nix.url = "github:hardenedlinux/zeek2nix";
     threatbus2nix.url = "github:gtrunsec/threatbus2nix";
 
-    nixpkgs-hardienedlinux.url = "github:hardenedlinux/nixpkgs-hardenedlinux";
+    nixpkgs-hardenedlinux.url = "github:hardenedlinux/nixpkgs-hardenedlinux";
   };
 
   outputs = {std, ...} @ inputs:
-    std.grow {
+    std.growOn {
       inherit inputs;
       cellsFrom = ./cells;
 
@@ -58,5 +55,7 @@
         (std.data "cargoMakeJobs")
         (std.data "waterwheelJobs")
       ];
+    } {
+      devShells = inputs.std.harvest inputs.self ["main" "devshellProfiles"];
     };
 }
