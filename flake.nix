@@ -35,7 +35,8 @@
       organelles = [
         (std.installables "packages")
 
-        (std.devshells "devshellProfiles")
+        (std.functions "devshellProfiles")
+        (std.devshells "devshells")
 
         (std.runnables "entrypoints")
         (std.runnables "onPremises")
@@ -56,6 +57,6 @@
         (std.data "waterwheelJobs")
       ];
     } {
-      devShells = inputs.std.harvest inputs.self ["main" "devshellProfiles"];
+      devShells = inputs.std.harvest inputs.self ["main" "devshells"];
     };
 }

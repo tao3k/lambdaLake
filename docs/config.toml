@@ -1,6 +1,6 @@
 baseURL = "https://gtrunsec.github.io/huntingCells"
 languageCode = "en-us"
-title = "huntingCells"
+title = "Hunting Cells"
 theme = "cortex"
 
 [params]

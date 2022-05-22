@@ -27,7 +27,7 @@ jobs:
         run: nix -Lv flake show
 
       - name: Build Doc
-        run: nix run .\#x86_64-linux.main.entrypoints.mkdoc
+        run: nix develop --show-trace --command -- mkdoc
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
