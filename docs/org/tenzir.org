@@ -3,6 +3,8 @@
 :END:
 #+title: Tenzir
 
+- tags :: [[id:8d881c2b-5ce1-4ec9-bce6-fe87cb88e570][Vast]]
+
 * Generator
 
 ** Vast.yaml

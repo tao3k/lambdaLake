@@ -3,9 +3,10 @@
   cell,
 }: let
   inherit (cell) generator;
+  inherit (inputs.cells.main.library) lambda-microvm-lab;
 in {
   nomad.vast = {
-    prod = inputs.lambda-microvm-hunting-lab.nixosConfigurations.nomad-tenzir-vast.extendModules {
+    prod = lambda-microvm-lab.nixosConfigurations.nomad-tenzir-vast.extendModules {
       modules = [
         ./nomad-vast.nix
         {
@@ -16,7 +17,7 @@ in {
       ];
     };
 
-    dev = inputs.lambda-microvm-hunting-lab.nixosConfigurations.nomad-tenzir-vast.extendModules {
+    dev = lambda-microvm-lab.nixosConfigurations.nomad-tenzir-vast.extendModules {
       modules = [
         ./nomad-vast.nix
         {

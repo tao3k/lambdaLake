@@ -2,3 +2,5 @@
 :ID:       0f10681c-fe2c-4071-bc70-6a6c3c2a1879
 :END:
 #+title: SOC
+
+* [[id:cba4918c-ccf0-4b42-81e6-265e29ff2577][MISP]]

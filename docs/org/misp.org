@@ -3,5 +3,4 @@
 :END:
 #+title: MISP
 
-
 * [[https://github.com/MISP/MISP][MISP]]

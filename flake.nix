@@ -12,8 +12,7 @@
     yants.url = "github:divnix/yants";
     yants.inputs.nixpkgs.follows = "nixpkgs";
 
-    #cells-lab.url = "/home/gtrun/ghq/github.com/GTrunSec/DevSecOps-cells";
-    cells-lab.url = "github:gtrunsec/DevSecOps-cells";
+    cells-lab.url = "github:gtrunsec/cells-lab";
 
     org-roam-book-template.url = "github:gtrunsec/org-roam-book-template";
     org-roam-book-template.inputs.nixpkgs.follows = "nixpkgs";
@@ -45,7 +44,7 @@
         (std.functions "library")
 
         (std.data "configFiles")
-        (std.data "nixosProfiles")
+        (std.functions "nixosProfiles")
         (std.data "containerJobs")
         (std.data "schemaProfiles")
 
