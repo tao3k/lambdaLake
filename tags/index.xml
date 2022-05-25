@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hunting Cells</title>
-    <link>https://gtrunsec.github.io/huntingCells/tags/</link>
+    <link>https://gtrunsec.github.io/hunting-cells/tags/</link>
     <description>Recent content in Tags on Hunting Cells</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://gtrunsec.github.io/huntingCells/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://gtrunsec.github.io/hunting-cells/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

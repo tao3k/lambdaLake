@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gtrunsec.github.io/huntingCells/categories/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/categories/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/posts/misp/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/posts/misp/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/posts/nix2container/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/posts/nix2container/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/posts/opencti/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/posts/opencti/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/posts/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/posts/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/search/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/search/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/posts/soc/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/posts/soc/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/posts/soc-aciton/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/posts/soc-aciton/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/tags/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/tags/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/posts/tenzir/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/posts/tenzir/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/posts/usage/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/posts/usage/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/posts/vast/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/posts/vast/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/huntingCells/posts/zeek/</loc>
+    <loc>https://gtrunsec.github.io/hunting-cells/posts/zeek/</loc>
   </url>
 </urlset>

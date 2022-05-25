@@ -2,88 +2,88 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Hunting Cells</title>
-    <link>https://gtrunsec.github.io/huntingCells/posts/</link>
+    <link>https://gtrunsec.github.io/hunting-cells/posts/</link>
     <description>Recent content in Posts on Hunting Cells</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://gtrunsec.github.io/huntingCells/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://gtrunsec.github.io/hunting-cells/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MISP</title>
-      <link>https://gtrunsec.github.io/huntingCells/posts/misp/</link>
+      <link>https://gtrunsec.github.io/hunting-cells/posts/misp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/huntingCells/posts/misp/</guid>
+      <guid>https://gtrunsec.github.io/hunting-cells/posts/misp/</guid>
       <description>MISP </description>
     </item>
     
     <item>
       <title>Nix2container</title>
-      <link>https://gtrunsec.github.io/huntingCells/posts/nix2container/</link>
+      <link>https://gtrunsec.github.io/hunting-cells/posts/nix2container/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/huntingCells/posts/nix2container/</guid>
+      <guid>https://gtrunsec.github.io/hunting-cells/posts/nix2container/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OpenCTI</title>
-      <link>https://gtrunsec.github.io/huntingCells/posts/opencti/</link>
+      <link>https://gtrunsec.github.io/hunting-cells/posts/opencti/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/huntingCells/posts/opencti/</guid>
+      <guid>https://gtrunsec.github.io/hunting-cells/posts/opencti/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SOC</title>
-      <link>https://gtrunsec.github.io/huntingCells/posts/soc/</link>
+      <link>https://gtrunsec.github.io/hunting-cells/posts/soc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/huntingCells/posts/soc/</guid>
+      <guid>https://gtrunsec.github.io/hunting-cells/posts/soc/</guid>
       <description>MISP </description>
     </item>
     
     <item>
       <title>SOC Aciton</title>
-      <link>https://gtrunsec.github.io/huntingCells/posts/soc-aciton/</link>
+      <link>https://gtrunsec.github.io/hunting-cells/posts/soc-aciton/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/huntingCells/posts/soc-aciton/</guid>
+      <guid>https://gtrunsec.github.io/hunting-cells/posts/soc-aciton/</guid>
       <description> tags SOC  Github Action  Zeek Action  </description>
     </item>
     
     <item>
       <title>Tenzir</title>
-      <link>https://gtrunsec.github.io/huntingCells/posts/tenzir/</link>
+      <link>https://gtrunsec.github.io/hunting-cells/posts/tenzir/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/huntingCells/posts/tenzir/</guid>
+      <guid>https://gtrunsec.github.io/hunting-cells/posts/tenzir/</guid>
       <description> tags Vast  Generator Vast.yaml  namespace: vast-config-&amp;lt;state&amp;gt;  prod -&amp;gt; production     1  std run //tenzir//generator:config-vast-prod   generating config to nixosModule of the vast 1 2 3  services.vast.settings = inputs.data-merge.merge inputs.cells-lab.tenzir.generator.prod {  vast.endpoint = &amp;#34;192.168.1.1:4000&amp;#34;; };   generating config to NomadJobs of the vast 1 2 3 4  deployNomadJobs.vast.prod = inputs.data-merge.merge inputs.cells.tenzir.generator.prod {  vast.endpoint = &amp;#34;192.168.1.1:4000&amp;#34;;  # &amp;lt;custom settings&amp;gt; };    deploy   1  std //tenzir//deploy:vast-prod   NomadJobs Vast </description>
     </item>
     
     <item>
       <title>Usage</title>
-      <link>https://gtrunsec.github.io/huntingCells/posts/usage/</link>
+      <link>https://gtrunsec.github.io/hunting-cells/posts/usage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/huntingCells/posts/usage/</guid>
-      <description>Enter Shell  With nix develop   1  nix develop &amp;amp;&amp;amp; menu    With direnv   1  direnv allow   Docs  addr: http://localhost:1313/huntingCells/posts run `hugo server`   1  nix develop --command mkdoc server    sync your docs   1  nix develop --command mkdoc   </description>
+      <guid>https://gtrunsec.github.io/hunting-cells/posts/usage/</guid>
+      <description>Enter Shell  With nix develop   1  nix develop &amp;amp;&amp;amp; menu    With direnv   1  direnv allow   Docs  address: http://localhost:1313/hunting-cells/posts run hugo server   1  nix develop --command mkdoc server    sync your docs   1  nix develop --command mkdoc   </description>
     </item>
     
     <item>
       <title>Vast</title>
-      <link>https://gtrunsec.github.io/huntingCells/posts/vast/</link>
+      <link>https://gtrunsec.github.io/hunting-cells/posts/vast/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/huntingCells/posts/vast/</guid>
+      <guid>https://gtrunsec.github.io/hunting-cells/posts/vast/</guid>
       <description> tags Tenzir  Packages  release latest  Nix2container  vast-n2c-release vast-n2c-relase  </description>
     </item>
     
     <item>
       <title>Zeek</title>
-      <link>https://gtrunsec.github.io/huntingCells/posts/zeek/</link>
+      <link>https://gtrunsec.github.io/hunting-cells/posts/zeek/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/huntingCells/posts/zeek/</guid>
+      <guid>https://gtrunsec.github.io/hunting-cells/posts/zeek/</guid>
       <description>Zeek Action </description>
     </item>
     
