@@ -20,8 +20,8 @@ direnv allow
 
 * Docs
 
-- addr:  http://localhost:1313/huntingCells/posts
-- run `hugo server`
+- address:  http://localhost:1313/hunting-cells/posts
+- run *hugo server*
 
 #+begin_src sh :async :exports both :results output
 nix develop --command mkdoc server

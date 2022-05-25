@@ -1,4 +1,4 @@
-baseURL = "https://gtrunsec.github.io/huntingCells"
+baseURL = "https://gtrunsec.github.io/hunting-cells"
 languageCode = "en-us"
 title = "Hunting Cells"
 theme = "cortex"
