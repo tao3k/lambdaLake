@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>MISP</title>
+<html><title>Usage</title>
 
 
 <meta charset="utf-8">
@@ -26,9 +26,59 @@
   <div class="grid">
     <div class="page" data-level="1">
       <div class="content">
-        <h1>MISP</h1>
-        <h2 id="misp"><a href="https://github.com/MISP/MISP">MISP</a></h2>
-
+        <h1>Usage</h1>
+        <h2 id="enter-shell">Enter Shell</h2>
+<ul>
+<li>With <code>nix develop</code></li>
+</ul>
+<!--listend-->
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nix develop <span style="color:#666">&amp;&amp;</span> menu
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>With direnv</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>direnv allow
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="docs">Docs</h2>
+<ul>
+<li>addr:  <a href="http://localhost:1313/huntingCells/posts">http://localhost:1313/huntingCells/posts</a></li>
+<li>run `hugo server`</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nix develop --command mkdoc server
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>sync</strong> your docs</li>
+</ul>
+<!--listend-->
+<div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nix develop --command mkdoc
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
       </div>
       
 
@@ -48,8 +98,6 @@
    
 
    
-      
-   
 
    
 
@@ -64,17 +112,6 @@
    
 
 
-
-  <div class="bl-section">
-    <h4>Links to this note</h4>
-    <div class="backlinks">
-      <ul>
-       
-          <li><a href="/huntingCells/posts/soc/">SOC</a></li>
-       
-     </ul>
-    </div>
-  </div>
 
 
       </div>

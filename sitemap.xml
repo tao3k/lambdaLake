@@ -8,6 +8,8 @@
   </url><url>
     <loc>https://gtrunsec.github.io/huntingCells/posts/misp/</loc>
   </url><url>
+    <loc>https://gtrunsec.github.io/huntingCells/posts/nix2container/</loc>
+  </url><url>
     <loc>https://gtrunsec.github.io/huntingCells/posts/opencti/</loc>
   </url><url>
     <loc>https://gtrunsec.github.io/huntingCells/posts/</loc>
@@ -21,6 +23,10 @@
     <loc>https://gtrunsec.github.io/huntingCells/tags/</loc>
   </url><url>
     <loc>https://gtrunsec.github.io/huntingCells/posts/tenzir/</loc>
+  </url><url>
+    <loc>https://gtrunsec.github.io/huntingCells/posts/usage/</loc>
+  </url><url>
+    <loc>https://gtrunsec.github.io/huntingCells/posts/vast/</loc>
   </url><url>
     <loc>https://gtrunsec.github.io/huntingCells/posts/zeek/</loc>
   </url>
