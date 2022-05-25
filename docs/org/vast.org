@@ -8,10 +8,51 @@
 
 * Packages
 
-- release
-- latest
+- command:
+
+#+begin_src sh :async :results output slient :wrap src json
+nix eval --json --option warn-dirty false .\#__std.actions.x86_64-linux.tenzir.packages | jq .
+#+end_src
+
+#+RESULTS:
+#+begin_src json
+{
+  "threatbus": {
+    "install": "/nix/store/yyb61m3rnrscdn7nw5priq0rb7yc60pj-install",
+    "remove": "/nix/store/5lbw8z5dqqbg7jxlny7jid84jfppg5bz-remove",
+    "upgrade": "/nix/store/h64cqnn963i93ndhzrn5c1758x3k6y64-upgrade"
+  },
+  "threatbus-latest": {
+    "install": "/nix/store/x3lgws7dpx967jy1v210hlifi4gh9r09-install",
+    "remove": "/nix/store/6iw2p6vy91cj53n5md0jc5ykk9v1gszc-remove",
+    "upgrade": "/nix/store/x11q7iyrhjqlpnrakmvsjbv18pmglwd4-upgrade"
+  },
+  "vast-latest": {
+    "install": "/nix/store/sx1x0vbdhii9xnb9gk3z58qhiy0w1cga-install",
+    "remove": "/nix/store/5n6s2xxqk2avmprv6jqp3lfkaaxb3368-remove",
+    "upgrade": "/nix/store/p2gvp0b47bidcafgfgf4ma17n9v2qx4v-upgrade"
+  },
+  "vast-n2c-latest": {
+    "install": "/nix/store/swx4gdwaln5a78vy4bnhgb25khh97ap2-install",
+    "remove": "/nix/store/y5qbzx20larsnahwl8w3807kaab5j4ph-remove",
+    "upgrade": "/nix/store/162f1pp4fc31d1ly3qk2gvg39flfw8js-upgrade"
+  },
+  "vast-n2c-release": {
+    "install": "/nix/store/nk1g02ran35x2w19hr00r1p7z4fr11kb-install",
+    "remove": "/nix/store/mmcwh8pqysanxv8wbbv6igjv57f6nj5l-remove",
+    "upgrade": "/nix/store/66kv3bsic7g381dj0ik1x5gkw73lx910-upgrade"
+  },
+  "vast-release": {
+    "install": "/nix/store/ihhyxfdd51abfn9fchrjg2qnd787cjc6-install",
+    "remove": "/nix/store/6wzfrm6vwmfxzzvycml937c85ybyg3p5-remove",
+    "upgrade": "/nix/store/jihsizmm9rf3cgzpxllc2y451dd12w25-upgrade"
+  }
+}
+#+end_src
+
+
 
 ** [[id:fed393dd-9ec5-4071-a092-b6404d2f0a71][Nix2container]]
 
-- vast-n2c-release
-- vast-n2c-relase
+| name | vast-n2c-release |
+|      | vast-n2c-latest  |
