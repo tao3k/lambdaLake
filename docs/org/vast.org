@@ -9,48 +9,51 @@
 * Packages
 
 - command:
+- *:wrap export json*
 
-#+begin_src sh :async :results output slient :wrap src json
+#+begin_src sh :async :exports both :results output
 nix eval --json --option warn-dirty false .\#__std.actions.x86_64-linux.tenzir.packages | jq .
 #+end_src
 
+#+attr_html: :class packages
+#+attr_css: :color blue
 #+RESULTS:
-#+begin_src json
+#+begin_example
 {
   "threatbus": {
-    "install": "/nix/store/yyb61m3rnrscdn7nw5priq0rb7yc60pj-install",
-    "remove": "/nix/store/5lbw8z5dqqbg7jxlny7jid84jfppg5bz-remove",
-    "upgrade": "/nix/store/h64cqnn963i93ndhzrn5c1758x3k6y64-upgrade"
+    "install": "/nix/store/q6ixc8vpnwxx8iq7g96y9q15h2ls8f70-install",
+    "remove": "/nix/store/p1zbs7mlad9vxzsak6nbvcdg1z39k279-remove",
+    "upgrade": "/nix/store/1krrhjwwdh47jwq9rdxvk8a54p1jgss2-upgrade"
   },
   "threatbus-latest": {
-    "install": "/nix/store/x3lgws7dpx967jy1v210hlifi4gh9r09-install",
-    "remove": "/nix/store/6iw2p6vy91cj53n5md0jc5ykk9v1gszc-remove",
-    "upgrade": "/nix/store/x11q7iyrhjqlpnrakmvsjbv18pmglwd4-upgrade"
+    "install": "/nix/store/j36dkv883f9ww9v3isb1xff9d5rs3gvl-install",
+    "remove": "/nix/store/x5nksk5ny86cla5ila2w5nf0d0brffc7-remove",
+    "upgrade": "/nix/store/q9gyzp8zl6s192sdz7v53jvdz8hkp88d-upgrade"
   },
   "vast-latest": {
-    "install": "/nix/store/sx1x0vbdhii9xnb9gk3z58qhiy0w1cga-install",
-    "remove": "/nix/store/5n6s2xxqk2avmprv6jqp3lfkaaxb3368-remove",
-    "upgrade": "/nix/store/p2gvp0b47bidcafgfgf4ma17n9v2qx4v-upgrade"
+    "install": "/nix/store/1flmnmlzrbq6zi1gqbpv5qkgl9xppq6d-install",
+    "remove": "/nix/store/9xvv2m5944dgp25s116rr11czgxkjvcx-remove",
+    "upgrade": "/nix/store/z5frk6lkcwvwqklg32sxy3fl0rpcjf6w-upgrade"
   },
   "vast-n2c-latest": {
-    "install": "/nix/store/swx4gdwaln5a78vy4bnhgb25khh97ap2-install",
-    "remove": "/nix/store/y5qbzx20larsnahwl8w3807kaab5j4ph-remove",
-    "upgrade": "/nix/store/162f1pp4fc31d1ly3qk2gvg39flfw8js-upgrade"
+    "install": "/nix/store/1m49psv32w0jx0fs51llvngfh1y7aqx0-install",
+    "remove": "/nix/store/4kpja0kimsa8mij8lz2b6gs53wdlk0cw-remove",
+    "upgrade": "/nix/store/02lzv3d277wf4hfnzf3abcmir9kimy4k-upgrade"
   },
   "vast-n2c-release": {
-    "install": "/nix/store/nk1g02ran35x2w19hr00r1p7z4fr11kb-install",
-    "remove": "/nix/store/mmcwh8pqysanxv8wbbv6igjv57f6nj5l-remove",
-    "upgrade": "/nix/store/66kv3bsic7g381dj0ik1x5gkw73lx910-upgrade"
+    "install": "/nix/store/rjjm81sqjmwxb17x24jmgbzld0zpcbls-install",
+    "remove": "/nix/store/d2rh2i938ywqs0970sm77ci4pywqmvzy-remove",
+    "upgrade": "/nix/store/v5n52a91hjhddsyxsxmv7nwpd4413rv6-upgrade"
   },
   "vast-release": {
-    "install": "/nix/store/ihhyxfdd51abfn9fchrjg2qnd787cjc6-install",
-    "remove": "/nix/store/6wzfrm6vwmfxzzvycml937c85ybyg3p5-remove",
-    "upgrade": "/nix/store/jihsizmm9rf3cgzpxllc2y451dd12w25-upgrade"
+    "install": "/nix/store/sm7vjn3ryi293bc6n7yj5dy4rd67blqv-install",
+    "remove": "/nix/store/1cr08fa07rs9nagzx5scxpqay3n7hgd5-remove",
+    "upgrade": "/nix/store/3yv5j23pilg2983b5dw1jw5rbv7na2li-upgrade"
   }
 }
-#+end_src
+#+end_example
 
-
+** configFiles
 
 ** [[id:fed393dd-9ec5-4071-a092-b6404d2f0a71][Nix2container]]
 

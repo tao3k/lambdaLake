@@ -1,29 +1,21 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    latest.url = "github:NixOS/nixpkgs/master";
-
-    std.url = "github:divnix/std";
-    std.inputs.nixpkgs.follows = "nixpkgs";
-
-    data-merge.url = "github:divnix/data-merge";
-    data-merge.inputs.nixpkgs.follows = "nixpkgs";
-
-    yants.url = "github:divnix/yants";
-    yants.inputs.nixpkgs.follows = "nixpkgs";
-
+    nixpkgs.follows = "cells-lab/nixpkgs";
+    latest.follows = "cells-lab/latest";
+  };
+  inputs = {
     cells-lab.url = "github:gtrunsec/cells-lab";
-
-    org-roam-book-template.url = "github:gtrunsec/org-roam-book-template";
-    org-roam-book-template.inputs.nixpkgs.follows = "nixpkgs";
+    yants.follows = "cells-lab/yants";
+    org-roam-book-template.follows = "cells-lab/org-roam-book-template";
+    std.follows = "cells-lab/std";
+    data-merge.follows = "cells-lab/data-merge";
   };
 
   inputs = {
-    vast2nix.url = "github:gtrunsec/vast2nix";
-    zeek2nix.url = "github:hardenedlinux/zeek2nix";
-    threatbus2nix.url = "github:gtrunsec/threatbus2nix";
-
-    nixpkgs-hardenedlinux.url = "github:hardenedlinux/nixpkgs-hardenedlinux";
+    vast2nix.follows = "cells-lab/lambda-microvm-lab/vast2nix";
+    zeek2nix.follows = "cells-lab/lambda-microvm-lab/zeek2nix";
+    threatbus2nix.follows = "cells-lab/lambda-microvm-lab/threatbus2nix";
+    nixpkgs-hardenedlinux.follows = "cells-lab/nixpkgs-hardenedlinux";
   };
 
   outputs = {std, ...} @ inputs:
@@ -43,8 +35,10 @@
         (std.functions "generators")
         (std.functions "library")
 
-        (std.data "configFiles")
         (std.functions "nixosProfiles")
+        (std.functions "microvmProfiles")
+
+        (std.data "configFiles")
         (std.data "containerJobs")
         (std.data "schemaProfiles")
 
