@@ -10,6 +10,7 @@ in
       name = "Hunting Cells";
       imports = [
         inputs.cells-lab.main.devshellProfiles.default
+        inputs.cells-lab.main.devshellProfiles.docs
       ];
     };
   }
