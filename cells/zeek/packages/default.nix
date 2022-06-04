@@ -12,6 +12,7 @@ in {
     ;
   inherit
     (nixpkgs-hardenedlinux.packages)
+    zed
     zeekscript
     ;
 }

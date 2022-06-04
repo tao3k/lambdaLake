@@ -13,7 +13,8 @@
 
   inputs = {
     vast2nix.follows = "cells-lab/lambda-microvm-lab/vast2nix";
-    zeek2nix.follows = "cells-lab/lambda-microvm-lab/zeek2nix";
+    zeek2nix.url = "github:hardenedlinux/zeek2nix";
+    zeek2nix.inputs.nixpkgs-hardenedlinux.follows = "cells-lab/nixpkgs-hardenedlinux";
     threatbus2nix.follows = "cells-lab/lambda-microvm-lab/threatbus2nix";
     nixpkgs-hardenedlinux.follows = "cells-lab/nixpkgs-hardenedlinux";
   };
