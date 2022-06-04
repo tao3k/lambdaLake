@@ -34,6 +34,7 @@
 <h2 id="packages">Packages</h2>
 <ul>
 <li>command:</li>
+<li><strong>:wrap export json</strong></li>
 </ul>
 <!--listend-->
 <div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -44,7 +45,79 @@
 <pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nix <span style="color:#007020">eval</span> --json --option warn-dirty <span style="color:#007020">false</span> .<span style="color:#4070a0;font-weight:bold">\#</span>__std.actions.x86_64-linux.tenzir.packages | jq .
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="nix2container--nix2container-dot-md"><a href="/hunting-cells/posts/nix2container/">Nix2container</a></h3>
+</div><style>.packages { color: blue;  }</style>
+<div class="highlight packages"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  &#34;threatbus&#34;: {
+</span></span><span style="display:flex;"><span>    &#34;install&#34;: &#34;/nix/store/q6ixc8vpnwxx8iq7g96y9q15h2ls8f70-install&#34;,
+</span></span><span style="display:flex;"><span>    &#34;remove&#34;: &#34;/nix/store/p1zbs7mlad9vxzsak6nbvcdg1z39k279-remove&#34;,
+</span></span><span style="display:flex;"><span>    &#34;upgrade&#34;: &#34;/nix/store/1krrhjwwdh47jwq9rdxvk8a54p1jgss2-upgrade&#34;
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  &#34;threatbus-latest&#34;: {
+</span></span><span style="display:flex;"><span>    &#34;install&#34;: &#34;/nix/store/j36dkv883f9ww9v3isb1xff9d5rs3gvl-install&#34;,
+</span></span><span style="display:flex;"><span>    &#34;remove&#34;: &#34;/nix/store/x5nksk5ny86cla5ila2w5nf0d0brffc7-remove&#34;,
+</span></span><span style="display:flex;"><span>    &#34;upgrade&#34;: &#34;/nix/store/q9gyzp8zl6s192sdz7v53jvdz8hkp88d-upgrade&#34;
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  &#34;vast-latest&#34;: {
+</span></span><span style="display:flex;"><span>    &#34;install&#34;: &#34;/nix/store/1flmnmlzrbq6zi1gqbpv5qkgl9xppq6d-install&#34;,
+</span></span><span style="display:flex;"><span>    &#34;remove&#34;: &#34;/nix/store/9xvv2m5944dgp25s116rr11czgxkjvcx-remove&#34;,
+</span></span><span style="display:flex;"><span>    &#34;upgrade&#34;: &#34;/nix/store/z5frk6lkcwvwqklg32sxy3fl0rpcjf6w-upgrade&#34;
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  &#34;vast-n2c-latest&#34;: {
+</span></span><span style="display:flex;"><span>    &#34;install&#34;: &#34;/nix/store/1m49psv32w0jx0fs51llvngfh1y7aqx0-install&#34;,
+</span></span><span style="display:flex;"><span>    &#34;remove&#34;: &#34;/nix/store/4kpja0kimsa8mij8lz2b6gs53wdlk0cw-remove&#34;,
+</span></span><span style="display:flex;"><span>    &#34;upgrade&#34;: &#34;/nix/store/02lzv3d277wf4hfnzf3abcmir9kimy4k-upgrade&#34;
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  &#34;vast-n2c-release&#34;: {
+</span></span><span style="display:flex;"><span>    &#34;install&#34;: &#34;/nix/store/rjjm81sqjmwxb17x24jmgbzld0zpcbls-install&#34;,
+</span></span><span style="display:flex;"><span>    &#34;remove&#34;: &#34;/nix/store/d2rh2i938ywqs0970sm77ci4pywqmvzy-remove&#34;,
+</span></span><span style="display:flex;"><span>    &#34;upgrade&#34;: &#34;/nix/store/v5n52a91hjhddsyxsxmv7nwpd4413rv6-upgrade&#34;
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  &#34;vast-release&#34;: {
+</span></span><span style="display:flex;"><span>    &#34;install&#34;: &#34;/nix/store/sm7vjn3ryi293bc6n7yj5dy4rd67blqv-install&#34;,
+</span></span><span style="display:flex;"><span>    &#34;remove&#34;: &#34;/nix/store/1cr08fa07rs9nagzx5scxpqay3n7hgd5-remove&#34;,
+</span></span><span style="display:flex;"><span>    &#34;upgrade&#34;: &#34;/nix/store/3yv5j23pilg2983b5dw1jw5rbv7na2li-upgrade&#34;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="configfiles">configFiles</h3>
+<h3 id="nix2container--nix2container-dot-md"><a href="/hunting-cells/posts/nix2container/">Nix2container</a></h3>
 <table>
 <thead>
 <tr>
