@@ -1,4 +1,7 @@
 {
+  nixConfig.extra-substituters = "https://zeek.cachix.org";
+  nixConfig.extra-trusted-public-keys = "zeek.cachix.org-1:Jv0hB/P5eF7RQUZgSQiVqzqzgweP29YIwpSiukGlDWQ=";
+
   inputs = {
     nixpkgs.follows = "cells-lab/nixpkgs";
     latest.follows = "cells-lab/latest";
