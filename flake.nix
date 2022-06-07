@@ -15,10 +15,13 @@
   };
 
   inputs = {
-    vast2nix.follows = "cells-lab/lambda-microvm-lab/vast2nix";
+    vast2nix.url = "github:gtrunsec/vast2nix";
+    vast2nix.inputs.zeek2nix.follows = "zeek2nix";
+
     zeek2nix.url = "github:hardenedlinux/zeek2nix";
     zeek2nix.inputs.nixpkgs-hardenedlinux.follows = "cells-lab/nixpkgs-hardenedlinux";
-    threatbus2nix.follows = "cells-lab/lambda-microvm-lab/threatbus2nix";
+
+    threatbus2nix.url = "github:gtrunsec/threatbus2nix";
     nixpkgs-hardenedlinux.follows = "cells-lab/nixpkgs-hardenedlinux";
   };
 
