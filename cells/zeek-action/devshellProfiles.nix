@@ -27,7 +27,7 @@ in {
           btest --show-all
         '';
         category = "zeek-action";
-        help = "Check Zeek Scripts Syntax | zeek-btest <your testing dir>";
+        help = "Rrun btest in your Zeek Scripts Project | zeek-btest <your testing dir>";
       }
     ];
   };

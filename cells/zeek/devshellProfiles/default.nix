@@ -7,10 +7,6 @@ in {
   default = _: {
     commands = [
       {
-        package = packages.zed;
-        category = "zed";
-      }
-      {
         package = packages.zeek-release;
         category = "zeek";
       }
