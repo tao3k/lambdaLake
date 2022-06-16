@@ -16,4 +16,8 @@ in {
       }
     ];
   };
+  action = _: {
+    imports = [];
+    commands = [];
+  };
 }

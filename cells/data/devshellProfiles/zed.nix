@@ -13,8 +13,9 @@ in {
     }
     {
       name = "zed-explore";
-      category = "zed";
+      category = "data";
       command = "${zed}/bin/zed -Z $@";
+      help = "Example: zed-explore conn.log";
     }
   ];
 }

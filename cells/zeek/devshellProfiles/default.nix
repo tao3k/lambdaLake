@@ -21,4 +21,7 @@ in {
       }
     ];
   };
+  action = _: {
+    imports = [./action.nix];
+  };
 }

@@ -18,7 +18,7 @@ in
     zeek = {...}: {
       name = "Zeek Project";
       imports = [
-        inputs.cells.zeek-action.devshellProfiles.default
+        inputs.cells.zeek.devshellProfiles.default
         inputs.cells.data.devshellProfiles.zed
         inputs.cells.data.devshellProfiles.default
       ];
