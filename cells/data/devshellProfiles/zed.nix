@@ -9,10 +9,11 @@ in {
   commands = [
     {
       package = zed;
-      category = "zed";
+      category = "data";
     }
     {
       name = "zed-explore";
+      category = "zed";
       command = "${zed}/bin/zed -Z $@";
     }
   ];

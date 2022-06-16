@@ -15,4 +15,12 @@ in
         inputs.cells.data.devshellProfiles.default
       ];
     };
+    zeek = {...}: {
+      name = "Zeek Project";
+      imports = [
+        inputs.cells.zeek-action.devshellProfiles.default
+        inputs.cells.data.devshellProfiles.zed
+        inputs.cells.data.devshellProfiles.default
+      ];
+    };
   }

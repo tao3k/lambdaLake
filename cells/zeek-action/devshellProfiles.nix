@@ -27,7 +27,15 @@ in {
           btest --show-all
         '';
         category = "zeek-action";
-        help = "Rrun btest in your Zeek Scripts Project | zeek-btest <your testing dir>";
+        help = "Run btest in your Zeek Scripts Project | zeek-btest <your testing dir>";
+      }
+      {
+        name = "spicy-compile";
+        command = ''
+          name=$@
+          cd $PRJ_ROOT/analyzer
+          spicyz -o $name-analyzer.hlto analyzer.evt zeek_analyzer.spicy analyzer.spicy
+        '';
       }
     ];
   };
