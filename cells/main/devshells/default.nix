@@ -12,6 +12,7 @@ in
         inputs.cells-lab.main.devshellProfiles.default
         inputs.cells-lab.main.devshellProfiles.docs
         inputs.cells.data.devshellProfiles.zed
+        inputs.cells.data.devshellProfiles.default
       ];
     };
   }
