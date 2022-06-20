@@ -41,7 +41,7 @@ in
     [worker-1]
     type=worker
     host=${host}
-    interface=af_packet::${interface}
+    interface=${method}::${interface}
     lb_procs=${toString cores}
     pin_cpus=${toCores}
     lb_method=${
