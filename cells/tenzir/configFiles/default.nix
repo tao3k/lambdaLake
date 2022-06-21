@@ -3,6 +3,8 @@
   cell,
 }: let
   inherit (inputs) data-merge;
+  inherit (cell) library;
+  inherit (inputs) nixpkgs;
 in {
   vast = {
     db-directory ? "vast.db",
@@ -16,4 +18,10 @@ in {
       )
       // (import ./vast/default.nix args);
   };
+
+  importLogs = nixpkgs.writeText "caretaker.yaml" (library.caretakerImporter {
+    path = "/var/lib/zeek/current";
+    logs = [ "conn" "smtp" "pop3"];
+    config = "path";
+  });
 }
