@@ -8,6 +8,8 @@
   };
   inputs = {
     cells-lab.url = "github:gtrunsec/cells-lab";
+    std-files.url = "github:divnix/std/?ref=refs/pull/83/head";
+
     yants.follows = "cells-lab/yants";
     org-roam-book-template.follows = "cells-lab/org-roam-book-template";
     std.follows = "cells-lab/std";
@@ -45,7 +47,7 @@
         (std.functions "nixosProfiles")
         (std.functions "microvmProfiles")
 
-        (std.data "configFiles")
+        (inputs.std-files.files "configFiles")
         (std.data "containerJobs")
         (std.data "schemaProfiles")
 
