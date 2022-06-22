@@ -7,12 +7,18 @@
       configFile = "config.yaml";
     };
   };
-  caretakerImporter = {path, logs, config}: (map (x:
-    ''
-    [[watch]]
-    name = "${x}"
-    path = "${path}/${x}*.log"
-    command = "vast --config=${config} import > ${path}/${x}.log"
-    ''
-  ) logs);
+  caretakerImporter = {
+    path,
+    logs,
+    config,
+    importer ? "zeek",
+  }: (map (
+      x: ''
+        [[watch]]
+        name = "${x}"
+        path = "${path}/${x}*.log"
+        command = "vast ${config} import ${importer} < ${path}/${x}.log"
+      ''
+    )
+    logs);
 }
