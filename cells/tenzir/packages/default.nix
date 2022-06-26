@@ -19,6 +19,7 @@ in {
   inherit
     (threatbus2nix.packages)
     threatbus
+    threatbus-release
     threatbus-latest
     ;
 }
