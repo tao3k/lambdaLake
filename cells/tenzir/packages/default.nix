@@ -12,12 +12,12 @@ in {
   inherit (vast-n2c) vast-n2c-release vast-n2c-latest;
 
   inherit
-    (vast2nix.packages)
+    (vast2nix.vast.packages)
     vast-release
     vast-latest
     ;
   inherit
-    (threatbus2nix.packages)
+    (threatbus2nix.threatbus.packages)
     threatbus
     threatbus-release
     threatbus-latest
