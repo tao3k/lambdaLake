@@ -20,10 +20,10 @@
     vast2nix.inputs.zeek2nix.follows = "zeek2nix";
 
     zeek2nix.url = "github:hardenedlinux/zeek2nix";
-    zeek2nix.inputs.nixpkgs-hardenedlinux.follows = "cells-lab/nixpkgs-hardenedlinux";
+    zeek2nix.inputs.nixpkgs-hardenedlinux.follows = "nixpkgs-hardenedlinux";
 
     threatbus2nix.url = "github:gtrunsec/threatbus2nix";
-    nixpkgs-hardenedlinux.follows = "cells-lab/nixpkgs-hardenedlinux";
+    nixpkgs-hardenedlinux.url = "github:hardenedlinux/nixpkgs-hardenedlinux";
   };
 
   outputs = {std, ...} @ inputs:
