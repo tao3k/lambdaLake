@@ -14,5 +14,6 @@ in {
     (nixpkgs-hardenedlinux.packages)
     zed
     zeekscript
+    zeek-language-server
     ;
 }

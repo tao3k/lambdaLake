@@ -24,4 +24,7 @@ in {
   action = _: {
     imports = [./action.nix];
   };
+  dev = _: {
+    packages = [ packages.zeek-language-server ];
+  };
 }

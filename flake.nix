@@ -54,7 +54,7 @@
         (std.functions "nixosProfiles")
         (std.functions "microvmProfiles")
 
-        (inputs.cells-lab.files "configFiles")
+        (std.files "configFiles")
         (std.data "containerJobs")
         (std.data "schemaProfiles")
 
