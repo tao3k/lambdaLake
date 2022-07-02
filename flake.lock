@@ -2437,11 +2437,11 @@
         "xnlib": "xnlib"
       },
       "locked": {
-        "lastModified": 1656541392,
-        "narHash": "sha256-Ho4YY4KOrxq5lWaHEfBExjBDmXnGWyDCzy8hlsao9qI=",
+        "lastModified": 1656723025,
+        "narHash": "sha256-KGXBiV/pPIefqRSug66w3co8dAe/xbdElNpCtUGPyco=",
         "owner": "hardenedlinux",
         "repo": "nixpkgs-hardenedlinux",
-        "rev": "6bd69bb8bbb163e8345dad4b5169e887884c45c6",
+        "rev": "17e2ab7d74124df99751bb2b65b01d08b9caa620",
         "type": "github"
       },
       "original": {

@@ -3,6 +3,7 @@
   cell,
 }: let
   inherit (cell) packages;
+  inherit (inputs) nixpkgs;
 in {
   default = _: {
     commands = [
@@ -25,6 +26,6 @@ in {
     imports = [./action.nix];
   };
   dev = _: {
-    packages = [ packages.zeek-language-server ];
+    packages = [packages.zeek-language-server];
   };
 }
