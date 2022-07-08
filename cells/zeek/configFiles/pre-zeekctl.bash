@@ -8,15 +8,14 @@ if [[ ! -d "/var/lib/zeek" ]];then
     cp -r "$("$@"/zeek-config --zeek_dist)"/share/zeekctl/scripts/* /var/lib/zeek/scripts/
 fi
 
-cat <<EOF > /var/lib/zeek/node.cfg
+cat <<EOF > /var/lib/zeek/etc/node.cfg
 [zeek]
 type=standalone
 host=localhost
 interface=eno1
 EOF
 
-cat <<EOF > /var/lib/zeek/networks.cfg
-[zeek]
+cat <<EOF > /var/lib/zeek/etc/networks.cfg
 # List of local networks in CIDR notation, optionally followed by a
 # descriptive tag.
 # For example, "10.0.0.0/8" or "fe80::/64" are valid prefixes.
