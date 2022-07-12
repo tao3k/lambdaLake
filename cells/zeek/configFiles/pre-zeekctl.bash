@@ -6,6 +6,7 @@ if [[ ! -d "/var/lib/zeek" ]];then
         /var/lib/zeek/etc
     # shellcheck disable=all
     cp -r "$("$@"/zeek-config --zeek_dist)"/share/zeekctl/scripts/* /var/lib/zeek/scripts/
+    cp -r "$("$@"/zeek-config --zeek_dist)"/etc/zeekctl.cfg /var/lib/zeek/etc
 fi
 
 cat <<EOF > /var/lib/zeek/etc/node.cfg
