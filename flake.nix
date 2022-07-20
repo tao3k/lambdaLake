@@ -6,6 +6,7 @@
     nixpkgs.follows = "cells-lab/nixpkgs";
     latest.follows = "cells-lab/latest";
   };
+
   inputs = {
     cells-lab.url = "github:gtrunsec/cells-lab";
 
@@ -28,6 +29,7 @@
 
   outputs = {std, ...} @ inputs:
     std.growOn {
+
       inherit inputs;
 
       systems = [

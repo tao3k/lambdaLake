@@ -9,6 +9,7 @@ if [[ ! -d "/var/lib/zeek" ]];then
     cp -r "$("$@"/zeek-config --zeek_dist)"/etc/zeekctl.cfg /var/lib/zeek/etc
 fi
 
+
 cat <<EOF > /var/lib/zeek/etc/node.cfg
 [zeek]
 type=standalone
