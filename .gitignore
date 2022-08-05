@@ -6,3 +6,6 @@ tmp/
 .std/
 docs/publish
 .cache
+
+# nixago: ignore-linked-files
+treefmt.toml

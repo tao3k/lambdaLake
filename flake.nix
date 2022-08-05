@@ -44,6 +44,8 @@
       organelles = [
         (std.installables "packages")
 
+        (std.nixago "nixago")
+
         (std.functions "devshellProfiles")
         (std.devshells "devshells")
 
