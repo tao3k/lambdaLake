@@ -46,6 +46,8 @@
 
         (std.nixago "nixago")
 
+        (std.data "config")
+
         (std.functions "devshellProfiles")
         (std.devshells "devshells")
 

@@ -7,7 +7,7 @@
 in
   l.mapAttrs (_: std.std.lib.mkShell) {
     default = {...}: {
-      name = "Hunting Cells";
+      name = "Hunting Lab";
       imports = [
         inputs.cells-lab.main.devshellProfiles.default
         inputs.cells-lab.main.devshellProfiles.docs
@@ -17,7 +17,7 @@ in
       ];
       nixago = [
         inputs.cells-lab.main.nixago.treefmt
-      ];
+      ] ++ l.attrValues inputs.cells.tenzir.nixago;
     };
     zeek = {...}: {
       name = "Zeek Project";
