@@ -10,10 +10,8 @@
   inputs = {
     cells-lab.url = "github:gtrunsec/cells-lab";
 
-    yants.follows = "cells-lab/yants";
     org-roam-book-template.follows = "cells-lab/org-roam-book-template";
     std.follows = "cells-lab/std";
-    data-merge.follows = "cells-lab/data-merge";
   };
 
   inputs = {
