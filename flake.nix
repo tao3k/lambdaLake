@@ -22,7 +22,9 @@
     zeek2nix.inputs.nixpkgs-hardenedlinux.follows = "nixpkgs-hardenedlinux";
 
     threatbus2nix.url = "github:gtrunsec/threatbus2nix";
+
     nixpkgs-hardenedlinux.url = "github:hardenedlinux/nixpkgs-hardenedlinux";
+    nixpkgs-hardenedlinux.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {std, ...} @ inputs:
