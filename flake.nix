@@ -41,7 +41,7 @@
 
       cellsFrom = ./cells;
 
-      organelles = [
+      cellBlocks = [
         (std.installables "packages")
 
         (std.nixago "nixago")
