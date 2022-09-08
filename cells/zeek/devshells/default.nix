@@ -11,6 +11,12 @@ in rec {
     ];
     env = [];
   };
+  build = inputs.std.std.lib.mkShell {
+    imports = [
+      cell.devshellProfiles.default
+    ];
+    env = [];
+  };
   spicy = inputs.cells-lab.main.library.mergeDevShell {
     mkShell = nixpkgs.mkShell {
       nativeBuildInputs = with nixpkgs; [llvmPackages.clang];

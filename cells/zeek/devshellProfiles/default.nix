@@ -21,7 +21,7 @@ in {
         category = "zeek";
       }
     ];
-    packages = [nixpkgs.tcpreplay];
+    packages = [nixpkgs.just];
   };
   action = _: {
     imports = [./action.nix];
