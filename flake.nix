@@ -72,6 +72,6 @@
         (std.data "waterwheelJobs")
       ];
     } {
-      devShells = inputs.std.harvest inputs.self ["main" "devshells"];
+      devShells = inputs.std.harvest inputs.self [["main" "devshells"] ["zeek" "devshells"]];
     };
 }
