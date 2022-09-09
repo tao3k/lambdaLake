@@ -2861,11 +2861,11 @@
         "xnlib": "xnlib"
       },
       "locked": {
-        "lastModified": 1662067476,
-        "narHash": "sha256-KaZ110NT6IJOCsp6pMYa+qBIeOvAl23wVWblopgSD18=",
+        "lastModified": 1662707901,
+        "narHash": "sha256-R6OYhpQ5L2nhWTK6ZtRlKkA3i+mrdFfWULUptHRQLTM=",
         "owner": "hardenedlinux",
         "repo": "nixpkgs-hardenedlinux",
-        "rev": "d9bfcbd4cd630e94579013c86b2245faa1707876",
+        "rev": "ba45f85b94a5029c54875a29120b422bcb2bf6a1",
         "type": "github"
       },
       "original": {
