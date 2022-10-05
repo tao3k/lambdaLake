@@ -3,7 +3,7 @@
   cell,
 }: let
   inherit (cell) nomadJobs;
-  inherit (inputs.cells-lab._writers.library) writeConfigurationFromLang;
+  inherit (inputs.cells-lab._writers.lib) writeConfigurationFromLang;
 
   name = "opencti-nomad-nixos";
 

@@ -21,7 +21,7 @@
 in {
   vast.prod = prod;
 
-  # mkSocProfile-custom-1 = library.makeConfiguration {
+  # mkSocProfile-custom-1 = lib.makeConfiguration {
   #   searchPaths.path = [
   #     inputs.cells.openCTI.generator.nomad.vast
   #     inputs.cells.zeek.generator.nomad.vast

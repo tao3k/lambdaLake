@@ -2,7 +2,7 @@
   inputs,
   cell,
 } @ args: let
-  inherit (inputs.cells.containers.library) nixpkgs;
+  inherit (inputs.cells.containers.lib) nixpkgs;
 
   vast = {
     compose = _args: import ./vast-compose.nix _args;

@@ -2,9 +2,9 @@
   inputs,
   cell,
 }: let
-  inherit (cell) dockerJobs library;
-  inherit (inputs.cells._modules.library) makeConfiguration;
-  inherit (inputs.cells.makes.library) makeSubstitution;
+  inherit (cell) dockerJobs lib;
+  inherit (inputs.cells._modules.lib) makeConfiguration;
+  inherit (inputs.cells.makes.lib) makeSubstitution;
 
   name = "opencti-" + builtins.baseNameOf ./.;
 

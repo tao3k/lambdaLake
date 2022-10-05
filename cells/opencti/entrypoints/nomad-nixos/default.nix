@@ -3,7 +3,7 @@
   cell,
 }: let
   inherit (cell) nomadJobs;
-  inherit (inputs.cells._modules.library) makeConfiguration;
+  inherit (inputs.cells._modules.lib) makeConfiguration;
 
   name = "opencti-nomad-container";
 

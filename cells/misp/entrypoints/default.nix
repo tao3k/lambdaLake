@@ -4,7 +4,7 @@
   ...
 }: let
   inherit (cell) nomadJobs;
-  inherit (inputs.cells-lab._writers.library) writeConfigurationFromLang;
+  inherit (inputs.cells-lab._writers.lib) writeConfigurationFromLang;
 in {
   nomad-container = writeConfigurationFromLang {
     name = "misp-nomad-container-dev";

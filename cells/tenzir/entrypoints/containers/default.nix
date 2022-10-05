@@ -3,9 +3,9 @@
   cell,
 }: let
   inherit (cell) containerJobs;
-  inherit (inputs.cells._modules.library) makeConfiguration;
-  inherit (inputs.cells.makes.library) makeSubstitution;
-  inherit (inputs.cells.containers.library) makePodmanJobs makeDockerComposeJobs;
+  inherit (inputs.cells._modules.lib) makeConfiguration;
+  inherit (inputs.cells.makes.lib) makeSubstitution;
+  inherit (inputs.cells.containers.lib) makePodmanJobs makeDockerComposeJobs;
 
   name = "tenzir-" + builtins.baseNameOf ./.;
 
