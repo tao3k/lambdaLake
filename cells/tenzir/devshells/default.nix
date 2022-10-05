@@ -6,6 +6,6 @@
   devshell = inputs.std.inputs.devshell.legacyPackages.${nixpkgs.system};
   l = nixpkgs.lib // builtins;
 in
-  l.mapAttrs (_: inputs.std.std.lib.mkShell) {
+  l.mapAttrs (_: inputs.std.lib.dev.mkShell) {
     default = _: {};
   }

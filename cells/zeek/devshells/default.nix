@@ -4,14 +4,14 @@
 }: let
   inherit (inputs) nixpkgs;
 in rec {
-  default = inputs.std.std.lib.mkShell {
+  default = inputs.std.lib.dev.mkShell {
     imports = [
       cell.devshellProfiles.default
       inputs.cells.data.devshellProfiles.zed
     ];
     env = [];
   };
-  build = inputs.std.std.lib.mkShell {
+  build = inputs.std.lib.dev.mkShell {
     imports = [
       cell.devshellProfiles.default
     ];

@@ -2,9 +2,9 @@
   inputs,
   cell,
 }:let
-  inherit (inputs) std nixpkgs data-merge;
+  inherit (inputs) std;
 in {
-  vast = std.std.lib.mkNixago {
+  vast = std.lib.dev.mkNixago {
     configData = (cell.config.vast {});
     output = "infra/tenzir/prod/vast.yaml";
     format = "yaml";
