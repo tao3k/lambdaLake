@@ -9,8 +9,8 @@ in
     default = {...}: {
       name = "Hunting Lab";
       imports = [
-        inputs.std.std.devshellProfiles.default
-        # inputs.cells-lab.common.devshellProfiles.docs
+        inputs.cells-lab._automation.devshellProfiles.default
+        inputs.cells-lab._automation.devshellProfiles.docs
 
         inputs.cells.data.devshellProfiles.zed
         inputs.cells.data.devshellProfiles.default
