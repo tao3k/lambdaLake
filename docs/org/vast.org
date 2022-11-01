@@ -5,7 +5,6 @@
 
 - tags :: [[id:99784b24-5f17-41ed-84eb-f1aa78ab05f9][Tenzir]]
 
-
 * Packages
 
 - command:
@@ -20,42 +19,44 @@ nix eval --json --option warn-dirty false .\#__std.actions.x86_64-linux.tenzir.p
 #+RESULTS:
 #+begin_example
 {
-  "threatbus": {
-    "install": "/nix/store/q6ixc8vpnwxx8iq7g96y9q15h2ls8f70-install",
-    "remove": "/nix/store/p1zbs7mlad9vxzsak6nbvcdg1z39k279-remove",
-    "upgrade": "/nix/store/1krrhjwwdh47jwq9rdxvk8a54p1jgss2-upgrade"
-  },
-  "threatbus-latest": {
-    "install": "/nix/store/j36dkv883f9ww9v3isb1xff9d5rs3gvl-install",
-    "remove": "/nix/store/x5nksk5ny86cla5ila2w5nf0d0brffc7-remove",
-    "upgrade": "/nix/store/q9gyzp8zl6s192sdz7v53jvdz8hkp88d-upgrade"
-  },
   "vast-latest": {
-    "install": "/nix/store/1flmnmlzrbq6zi1gqbpv5qkgl9xppq6d-install",
-    "remove": "/nix/store/9xvv2m5944dgp25s116rr11czgxkjvcx-remove",
-    "upgrade": "/nix/store/z5frk6lkcwvwqklg32sxy3fl0rpcjf6w-upgrade"
+    "build": "/nix/store/y7bk34ak3ml70pggp8id1kvjk4k8dar2-build",
+    "bundle": "/nix/store/fz1agqgjf0vdjf3qc6pgh7qrs9zbdbr1-bundle",
+    "bundleAppImage": "/nix/store/80hz5abrw8019y11wrspfcmr1wgfahvx-bundleAppImage",
+    "bundleImage": "/nix/store/g199jxyqjgr2amjilfgdqjcnzlhx4hd4-bundleImage",
+    "install": "/nix/store/caqrazmal5a5sg3dnmrqc9a60s7x1jc5-install",
+    "remove": "/nix/store/pw1i4ri4iym8q7ayp0cxasmnfnsliaip-remove",
+    "upgrade": "/nix/store/dkpilznmc1lr86d73yjnf1hzwagiv1nw-upgrade"
   },
   "vast-n2c-latest": {
-    "install": "/nix/store/1m49psv32w0jx0fs51llvngfh1y7aqx0-install",
-    "remove": "/nix/store/4kpja0kimsa8mij8lz2b6gs53wdlk0cw-remove",
-    "upgrade": "/nix/store/02lzv3d277wf4hfnzf3abcmir9kimy4k-upgrade"
+    "build": "/nix/store/dpsn4lyd0041qaxnjai719lv8labnjg0-build",
+    "bundle": "/nix/store/6rd7q9jidkr77x50zrpgblwiif99ifin-bundle",
+    "bundleAppImage": "/nix/store/w2hgh776b0ywqwi1wzj1qiymr2f9y4ii-bundleAppImage",
+    "bundleImage": "/nix/store/7qbgyfvfk0aysga430p9bmayk2qdnij7-bundleImage",
+    "install": "/nix/store/ibrxql8mbykwyp354ykidlr9d2k9p5c9-install",
+    "remove": "/nix/store/pdnxcf4y27qsrdfha1yzz9kw0y648k6h-remove",
+    "upgrade": "/nix/store/168bifks1k7xzwja4l7kczargw62a3ab-upgrade"
   },
   "vast-n2c-release": {
-    "install": "/nix/store/rjjm81sqjmwxb17x24jmgbzld0zpcbls-install",
-    "remove": "/nix/store/d2rh2i938ywqs0970sm77ci4pywqmvzy-remove",
-    "upgrade": "/nix/store/v5n52a91hjhddsyxsxmv7nwpd4413rv6-upgrade"
+    "build": "/nix/store/i4ywnpghp69a1sjbnsmpxpvqsllrmmf9-build",
+    "bundle": "/nix/store/daranlirnn2fn8zgmnxajnhw5xvdhp60-bundle",
+    "bundleAppImage": "/nix/store/rixh8bcdvx5mch16mhjlva2ah4irv2qy-bundleAppImage",
+    "bundleImage": "/nix/store/crk3qf58p1schv39b7zjzc77fmnjdlwd-bundleImage",
+    "install": "/nix/store/gn5ds0p810lqfqqjmwmizi49fa2gpb8l-install",
+    "remove": "/nix/store/4nlcmfzfih4afsaqksfa9av4mw17g9h1-remove",
+    "upgrade": "/nix/store/b57rr12gzcc5lpiyc971jlxgpap0xjz8-upgrade"
   },
   "vast-release": {
-    "install": "/nix/store/sm7vjn3ryi293bc6n7yj5dy4rd67blqv-install",
-    "remove": "/nix/store/1cr08fa07rs9nagzx5scxpqay3n7hgd5-remove",
-    "upgrade": "/nix/store/3yv5j23pilg2983b5dw1jw5rbv7na2li-upgrade"
+    "build": "/nix/store/2s4vcpj9zv5pl43knb2nzx5jrsrkrls8-build",
+    "bundle": "/nix/store/dvzhqm1jdz8anfm3dxxhxc4hdqx6qhra-bundle",
+    "bundleAppImage": "/nix/store/2pxblnaqbvq4v4di7rnl2f78d8gmr1na-bundleAppImage",
+    "bundleImage": "/nix/store/3c23xvc1pjiqfyhv637yxrhsds5yqr4h-bundleImage",
+    "install": "/nix/store/d25w7p4q246psmazyk20915izsn2s3gc-install",
+    "remove": "/nix/store/4wajbvpxgpmgava6ifpz1j7br3pkrfwi-remove",
+    "upgrade": "/nix/store/kmd7q3y7nxwcc4v0xxrnxlikfmx6iss7-upgrade"
   }
 }
 #+end_example
 
 ** configFiles
 
-** [[id:fed393dd-9ec5-4071-a092-b6404d2f0a71][Nix2container]]
-
-| name | vast-n2c-release |
-|      | vast-n2c-latest  |
