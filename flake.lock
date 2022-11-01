@@ -1535,11 +1535,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1667004240,
-        "narHash": "sha256-cb/v+/ZUlIH+FuM+f5VFYM0YM3xmNmU38nOgPT4p+kg=",
+        "lastModified": 1667334187,
+        "narHash": "sha256-00eUwIPlJU42afJfUAUFXyTkSkGoVc1C0Qy5errPeIE=",
         "owner": "hardenedlinux",
         "repo": "nixpkgs-hardenedlinux",
-        "rev": "f65667955f55cbd8473262de06cbd595b3f9a6fb",
+        "rev": "43c4af0c665c7c33c4dbe84421ebf85fb0f80e0e",
         "type": "github"
       },
       "original": {

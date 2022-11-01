@@ -16,6 +16,6 @@ in {
     btest
     zed
     zeekscript
-    zeek-language-server
+    # zeek-language-server
     ;
 }
