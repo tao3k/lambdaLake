@@ -27,7 +27,7 @@ jobs:
         run: nix -Lv flake show
 
       - name: Build Doc
-        run: nix develop --show-trace --command -- mkdoc
+        run: nix develop .#doc --show-trace --command -- mkdoc
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.4.1

@@ -27,4 +27,10 @@ in
         inputs.cells.data.devshellProfiles.default
       ];
     };
+    doc = {...}: {
+      name = "Documentation";
+      imports = [
+        inputs.cells-lab._automation.devshellProfiles.docs
+      ];
+    };
   }
