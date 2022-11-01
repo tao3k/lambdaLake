@@ -5,46 +5,56 @@
 
 - tags :: [[id:8d881c2b-5ce1-4ec9-bce6-fe87cb88e570][Vast]]
 
-* Generator
 
-** Vast.yaml
+* Packages
 
-
-+ namespace: vast-config-<state>
-  - prod -> production
+- command:
+- *:wrap export json*
 
 #+begin_src sh :async :exports both :results output
-std run //tenzir//generator:config-vast-prod
+nix eval --json --option warn-dirty false .\#__std.actions.x86_64-linux.tenzir.packages | jq .
 #+end_src
 
+#+attr_html: :class packages
+#+attr_css: :color blue
 #+RESULTS:
-
-
-** generating config to nixosModule of the vast
-
-#+begin_src nix :async :exports both :results output
-services.vast.settings = inputs.data-merge.merge inputs.cells-lab.tenzir.generator.prod {
-  vast.endpoint = "192.168.1.1:4000";
-};
-#+end_src
-
-
-** generating config to NomadJobs of the vast
-
-#+begin_src nix :async :exports both :results output
-deployNomadJobs.vast.prod = inputs.data-merge.merge inputs.cells.tenzir.generator.prod {
-  vast.endpoint = "192.168.1.1:4000";
-  # <custom settings>
-};
-#+end_src
-
-- deploy
-
-#+begin_src sh :async :exports both :results output
-std //tenzir//deploy:vast-prod
-#+end_src
-
-
-* NomadJobs
-
-** Vast
+#+begin_example
+{
+  "vast-latest": {
+    "build": "/nix/store/y7bk34ak3ml70pggp8id1kvjk4k8dar2-build",
+    "bundle": "/nix/store/fz1agqgjf0vdjf3qc6pgh7qrs9zbdbr1-bundle",
+    "bundleAppImage": "/nix/store/80hz5abrw8019y11wrspfcmr1wgfahvx-bundleAppImage",
+    "bundleImage": "/nix/store/g199jxyqjgr2amjilfgdqjcnzlhx4hd4-bundleImage",
+    "install": "/nix/store/caqrazmal5a5sg3dnmrqc9a60s7x1jc5-install",
+    "remove": "/nix/store/pw1i4ri4iym8q7ayp0cxasmnfnsliaip-remove",
+    "upgrade": "/nix/store/dkpilznmc1lr86d73yjnf1hzwagiv1nw-upgrade"
+  },
+  "vast-n2c-latest": {
+    "build": "/nix/store/dpsn4lyd0041qaxnjai719lv8labnjg0-build",
+    "bundle": "/nix/store/6rd7q9jidkr77x50zrpgblwiif99ifin-bundle",
+    "bundleAppImage": "/nix/store/w2hgh776b0ywqwi1wzj1qiymr2f9y4ii-bundleAppImage",
+    "bundleImage": "/nix/store/7qbgyfvfk0aysga430p9bmayk2qdnij7-bundleImage",
+    "install": "/nix/store/ibrxql8mbykwyp354ykidlr9d2k9p5c9-install",
+    "remove": "/nix/store/pdnxcf4y27qsrdfha1yzz9kw0y648k6h-remove",
+    "upgrade": "/nix/store/168bifks1k7xzwja4l7kczargw62a3ab-upgrade"
+  },
+  "vast-n2c-release": {
+    "build": "/nix/store/i4ywnpghp69a1sjbnsmpxpvqsllrmmf9-build",
+    "bundle": "/nix/store/daranlirnn2fn8zgmnxajnhw5xvdhp60-bundle",
+    "bundleAppImage": "/nix/store/rixh8bcdvx5mch16mhjlva2ah4irv2qy-bundleAppImage",
+    "bundleImage": "/nix/store/crk3qf58p1schv39b7zjzc77fmnjdlwd-bundleImage",
+    "install": "/nix/store/gn5ds0p810lqfqqjmwmizi49fa2gpb8l-install",
+    "remove": "/nix/store/4nlcmfzfih4afsaqksfa9av4mw17g9h1-remove",
+    "upgrade": "/nix/store/b57rr12gzcc5lpiyc971jlxgpap0xjz8-upgrade"
+  },
+  "vast-release": {
+    "build": "/nix/store/2s4vcpj9zv5pl43knb2nzx5jrsrkrls8-build",
+    "bundle": "/nix/store/dvzhqm1jdz8anfm3dxxhxc4hdqx6qhra-bundle",
+    "bundleAppImage": "/nix/store/2pxblnaqbvq4v4di7rnl2f78d8gmr1na-bundleAppImage",
+    "bundleImage": "/nix/store/3c23xvc1pjiqfyhv637yxrhsds5yqr4h-bundleImage",
+    "install": "/nix/store/d25w7p4q246psmazyk20915izsn2s3gc-install",
+    "remove": "/nix/store/4wajbvpxgpmgava6ifpz1j7br3pkrfwi-remove",
+    "upgrade": "/nix/store/kmd7q3y7nxwcc4v0xxrnxlikfmx6iss7-upgrade"
+  }
+}
+#+end_example

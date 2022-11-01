@@ -3,20 +3,20 @@
   cell,
 }: let
   inherit (cell) nomadJobs;
-  inherit (inputs.cells-lab._writers.lib) writeConfigurationFromLang;
+  inherit (inputs.cells-lab._writers.lib) writeConfig;
 
   name = "opencti-nomad-nixos";
-
-  common = branch:
-    writeConfigurationFromLang {
-      inherit name;
-      target = "nomad";
-      source = nomadJobs.nixos-node {
-        flake = "/home/gtrun/ghq/github.com/GTrunSec/lambda-microvm-hunting-lab#nixosConfigurations.nomad-tenzir-opencti";
-      };
-      format = "json";
-    };
 in {
-  dev = common "dev";
-  hydration.dev = common "dev" // {};
 }
+#   common = branch:
+#       writeConfig
+#       inherit name;
+#       target = "nomad";
+#       source = nomadJobs.nixos-node {
+#       format = "json";
+#     };
+# in {
+#   dev = common "dev";
+#   hydration.dev = common "dev" // {};
+# }
+

@@ -17,5 +17,6 @@ in {
     zed
     zeekscript
     # zeek-language-server
+    
     ;
 }

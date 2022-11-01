@@ -15,9 +15,11 @@ in
         inputs.cells.data.devshellProfiles.zed
         inputs.cells.data.devshellProfiles.default
       ];
-      nixago = [
-        inputs.cells-lab._automation.nixago.treefmt
-      ] ++ l.attrValues inputs.cells.tenzir.nixago;
+      nixago =
+        [
+          inputs.cells-lab._automation.nixago.treefmt
+        ]
+        ++ l.attrValues inputs.cells.tenzir.nixago;
     };
     zeek = {...}: {
       name = "Zeek Project";

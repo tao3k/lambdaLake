@@ -26,7 +26,6 @@
 
   outputs = {std, ...} @ inputs:
     std.growOn {
-
       inherit inputs;
 
       systems = [
