@@ -15,6 +15,7 @@
   };
 
   inputs = {
+    # tools
     vast2nix.url = "github:gtrunsec/vast2nix";
     zeek2nix.url = "github:hardenedlinux/zeek2nix";
     # threatbus2nix.url = "github:gtrunsec/threatbus2nix";
@@ -68,6 +69,6 @@
         (data "waterwheelJobs")
       ];
     } {
-      devShells = inputs.std.harvest inputs.self [["main" "devshells"] ["zeek" "devshells"]];
+      devShells = inputs.std.harvest inputs.self [["_automation" "devshells"] ["zeek" "devshells"]];
     };
 }
