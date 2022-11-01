@@ -24,10 +24,10 @@ direnv allow
 - run *hugo server*
 
 #+begin_src sh :async :exports both :results output
-nix develop --command mkdoc server
+nix develop .#doc --command mkdoc server
 #+end_src
 
 - *sync* your docs
 #+begin_src sh :async :exports both :results output
-nix develop --command mkdoc
+nix develop .#doc --command mkdoc
 #+end_src
