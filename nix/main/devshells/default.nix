@@ -9,14 +9,14 @@ in
     default = {...}: {
       name = "Hunting Lab";
       imports = [
-        inputs.cells-lab.main.devshellProfiles.default
-        inputs.cells-lab.main.devshellProfiles.docs
+        inputs.std.std.devshellProfiles.default
+        # inputs.cells-lab.common.devshellProfiles.docs
 
         inputs.cells.data.devshellProfiles.zed
         inputs.cells.data.devshellProfiles.default
       ];
       nixago = [
-        inputs.cells-lab.main.nixago.treefmt
+        inputs.cells-lab._automation.nixago.treefmt
       ] ++ l.attrValues inputs.cells.tenzir.nixago;
     };
     zeek = {...}: {

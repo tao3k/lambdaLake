@@ -12,7 +12,7 @@ in {
     zeek-latest
     ;
   inherit
-    (nixpkgs-hardenedlinux.packages)
+    (nixpkgs-hardenedlinux.packages.${nixpkgs.system})
     btest
     zed
     zeekscript

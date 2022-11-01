@@ -2,7 +2,7 @@
   inputs,
   cell,
 }: let
-  inherit (inputs) data-merge;
+  inherit (inputs.std) data-merge;
   inherit (cell) generators lib;
   inherit (inputs.cells._modules.lib) makeConfiguration;
   inherit (inputs.cells.makeConfiguration.lib) makeConfig;

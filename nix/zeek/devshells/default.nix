@@ -17,7 +17,7 @@ in rec {
     ];
     env = [];
   };
-  spicy = inputs.cells-lab.main.lib.mergeDevShell {
+  spicy = inputs.cells-lab.common.lib.mergeDevShell {
     mkShell = nixpkgs.mkShell {
       nativeBuildInputs = with nixpkgs; [llvmPackages.clang];
     };

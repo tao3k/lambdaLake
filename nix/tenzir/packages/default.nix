@@ -16,10 +16,10 @@ in {
     vast-release
     vast-latest
     ;
-  inherit
-    (threatbus2nix.threatbus.packages)
-    threatbus
-    threatbus-release
-    threatbus-latest
-    ;
+  # inherit
+  #   (threatbus2nix.threatbus.packages)
+  #   threatbus
+  #   threatbus-release
+  #   threatbus-latest
+  #   ;
 }

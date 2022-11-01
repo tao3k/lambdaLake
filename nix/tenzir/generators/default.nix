@@ -2,7 +2,7 @@
   inputs,
   cell,
 }: let
-  inherit (inputs) data-merge;
+  inherit (inputs.std) data-merge;
   inherit (cell) configFiles;
   # default
   vast-settings = {
