@@ -19,7 +19,7 @@ in
         [
           inputs.cells-lab._automation.nixago.treefmt
         ]
-        ++ l.attrValues inputs.cells.tenzir.nixago;
+        ++ l.attrValues inputs.cells.vast.nixago;
     };
     zeek = {...}: {
       name = "Zeek Project";
