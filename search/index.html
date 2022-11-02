@@ -128,6 +128,16 @@ window.store = {
     
     
     
+    "https:\/\/gtrunsec.github.io\/hunting-lab\/posts\/task-styles\/": {
+        
+        "title": "Task Styles",
+        "tags": [],
+        "content": "Branch develop -\u0026gt; dev production -\u0026gt; prod release staging next ", 
+        "url": "https:\/\/gtrunsec.github.io\/hunting-lab\/posts\/task-styles\/"
+    },
+    
+    
+    
     "https:\/\/gtrunsec.github.io\/hunting-lab\/posts\/tenzir\/": {
         
         "title": "Tenzir",
@@ -152,7 +162,7 @@ window.store = {
         
         "title": "Vast",
         "tags": [],
-        "content": " tags Tenzir Vast.yaml namespace: vast-config-\u0026lt;state\u0026gt; prod -\u0026gt; production 1 std run //tenzir//generator:config-vast-prod generating config to nixosModule of the vast 1 2 3 services.vast.settings = inputs.data-merge.merge inputs.cells-lab.tenzir.generator.prod { vast.endpoint = \u0026#34;192.168.1.1:4000\u0026#34;; }; generating config to NomadJobs of the vast 1 2 3 4 deployNomadJobs.vast.prod = inputs.data-merge.merge inputs.cells.tenzir.generator.prod { vast.endpoint = \u0026#34;192.168.1.1:4000\u0026#34;; # \u0026lt;custom settings\u0026gt; }; deploy 1 std //tenzir//deploy:vast-prod NomadJobs ", 
+        "content": " tags Tenzir Vast.yaml namespace: vast-config-\u0026lt;state\u0026gt; prod -\u0026gt; production 1 std run //tenzir//generator:config-vast-prod generating config to nixosModule of the vast 1 2 3 services.vast.settings = inputs.data-merge.merge inputs.cells-lab.tenzir.generator.prod { vast.endpoint = \u0026#34;192.168.1.1:4000\u0026#34;; }; generating config to NomadJobs of the vast 1 2 3 4 deployNomadJobs.vast.prod = inputs.data-merge.merge inputs.cells.tenzir.generator.prod { vast.endpoint = \u0026#34;192.168.1.1:4000\u0026#34;; # \u0026lt;custom settings\u0026gt; }; deploy 1 std //tenzir//deploy:vast-prod dockerComposes dev 1 std //vast/dockerComposes/dev:explore 1 2 3 4 5 6 7 8 9 10 11 12 services: vast: environment: {} image: tenzir/vast:${VERSION} ports: - ${VAST_PORT:-42000}:42000 restart: always volumes: - vastdata:/var/lib/vast version: \u0026#39;3\u0026#39; volumes: vastdata: {} prod 1 std //vast/dockerComposes/prod:explore 1 2 3 4 5 6 7 8 9 10 11 12 services: vast: environment: {} image: tenzir/vast:${VERSION} ports: - ${VAST_PORT:-42000}:42000 restart: always volumes: - vastdata:/var/lib/vast version: \u0026#39;3\u0026#39; volumes: vastdata: {} release 1 std //vast/dockerComposes/release:explore 1 2 3 4 5 6 7 8 9 10 11 12 services: vast: environment: {} image: tenzir/vast:v2.3.1 ports: - 42000:42000 restart: always volumes: - vastdata:/var/lib/vast version: \u0026#39;3\u0026#39; volumes: vastdata: {} NomadJobs ", 
         "url": "https:\/\/gtrunsec.github.io\/hunting-lab\/posts\/vast\/"
     },
     
