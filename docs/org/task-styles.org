@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       388465bf-28f1-44cd-b70f-60c71e482e19
+:END:
+#+title: Task Styles
+
+* Branch
+:PROPERTIES:
+:ID:       9c5af655-4887-4913-9174-4a80beabff9c
+:END:
+
+- develop -> dev
+- production -> prod
+- release
+- staging
+- next

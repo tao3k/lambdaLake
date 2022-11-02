@@ -1,10 +1,10 @@
-{version ? "1.1.2"}: let
+{version ? "latest"}: let
   env.common = {};
 in {
   version = "3";
 
-  services.threatbus = {
-    image = "tenzir/threatbus:${version}";
+  services.vast = {
+    image = "tenzir/vast:${version}";
     restart = "always";
     environment = env.common;
     volumes = ["vastdata:/var/lib/vast"];

@@ -57,7 +57,8 @@
         (functions "microvmProfiles")
 
         (files "configFiles")
-        (data "containerJobs")
+        (files "containerJobs")
+        (files "dockerComposes")
         (data "schemaProfiles")
 
         (data "consulProfiles")
@@ -65,7 +66,6 @@
         (data "terranix")
 
         (data "cargoMakeJobs")
-        (data "waterwheelJobs")
       ];
     } {
       devShells = inputs.std.harvest inputs.self [["_automation" "devshells"] ["zeek" "devshells"]];

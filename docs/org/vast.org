@@ -2,6 +2,7 @@
 :ID:       8d881c2b-5ce1-4ec9-bce6-fe87cb88e570
 :END:
 #+title: Vast
+#+header-args:sh: :dir ../../
 
 - tags :: [[id:99784b24-5f17-41ed-84eb-f1aa78ab05f9][Tenzir]]
 
@@ -43,5 +44,73 @@ std //tenzir//deploy:vast-prod
 #+end_src
 
 
-* NomadJobs
+* dockerComposes
 
+** dev
+
+#+begin_src sh :async :exports both :results output
+std //vast/dockerComposes/dev:explore
+#+end_src
+
+#+RESULTS:
+#+begin_example
+services:
+  vast:
+    environment: {}
+    image: tenzir/vast:${VERSION}
+    ports:
+    - ${VAST_PORT:-42000}:42000
+    restart: always
+    volumes:
+    - vastdata:/var/lib/vast
+version: '3'
+volumes:
+  vastdata: {}
+#+end_example
+
+** prod
+
+#+begin_src sh :async :exports both :results output
+std //vast/dockerComposes/prod:explore
+#+end_src
+
+#+RESULTS:
+#+begin_example
+services:
+  vast:
+    environment: {}
+    image: tenzir/vast:${VERSION}
+    ports:
+    - ${VAST_PORT:-42000}:42000
+    restart: always
+    volumes:
+    - vastdata:/var/lib/vast
+version: '3'
+volumes:
+  vastdata: {}
+#+end_example
+
+** release
+
+#+begin_src sh :async :exports both :results output
+std //vast/dockerComposes/release:explore
+#+end_src
+
+#+RESULTS:
+#+begin_example
+services:
+  vast:
+    environment: {}
+    image: tenzir/vast:v2.3.1
+    ports:
+    - 42000:42000
+    restart: always
+    volumes:
+    - vastdata:/var/lib/vast
+version: '3'
+volumes:
+  vastdata: {}
+#+end_example
+
+
+* NomadJobs
