@@ -5,6 +5,7 @@
   inputs = {
     nixpkgs.follows = "cells-lab/nixpkgs";
     latest.follows = "cells-lab/latest";
+    nixos.follows = "hive/nixos";
   };
 
   inputs = {
@@ -15,6 +16,7 @@
   };
 
   inputs = {
+    hive.url = "github:gtrunsec/hive";
     # tools
     vast2nix.url = "github:gtrunsec/vast2nix";
     zeek2nix.url = "github:hardenedlinux/zeek2nix";
