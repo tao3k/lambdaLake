@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       72d2674d-9477-4300-b6fb-80c2a6f4a5da
+:END:
+#+title: firecracker

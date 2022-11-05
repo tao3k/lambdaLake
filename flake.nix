@@ -12,7 +12,7 @@
     cells-lab.url = "github:gtrunsec/cells-lab";
 
     org-roam-book-template.follows = "cells-lab/org-roam-book-template";
-    std.follows = "cells-lab/std";
+    std.follows = "hive/std";
   };
 
   inputs = {
@@ -58,6 +58,9 @@
         (functions "nixosProfiles")
         (functions "microvmProfiles")
 
+        (functions "nixosModules")
+        (functions "homeModules")
+
         (files "configFiles")
         (files "containerJobs")
         (files "dockerComposes")
@@ -70,6 +73,9 @@
         (data "cargoMakeJobs")
       ];
     } {
-      devShells = inputs.std.harvest inputs.self [["_automation" "devshells"] ["zeek" "devshells"]];
+      devShells = inputs.std.harvest inputs.self [
+        ["_automation" "devshells"]
+        ["zeek" "devshells"]
+      ];
     };
 }
