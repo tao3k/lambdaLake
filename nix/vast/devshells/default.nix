@@ -2,10 +2,15 @@
   inputs,
   cell,
 }: let
-  inherit (inputs) nixpkgs;
-  devshell = inputs.std.inputs.devshell.legacyPackages.${nixpkgs.system};
+  inherit (inputs) nixpkgs std;
   l = nixpkgs.lib // builtins;
 in
-  l.mapAttrs (_: inputs.std.lib.dev.mkShell) {
-    default = _: {};
+  l.mapAttrs (_: std.lib.dev.mkShell) {
+    default = _: {
+      name = "Vast: default devshell";
+      imports = [
+        cell.devshellProfiles.default
+        inputs.cells.data.devshellProfiles.tuc
+      ];
+    };
   }

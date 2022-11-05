@@ -10,10 +10,11 @@
 
     org-roam-book-template.follows = "cells-lab/org-roam-book-template";
     std.follows = "hive/std";
+
+    hive.url = "github:gtrunsec/hive";
   };
 
   inputs = {
-    hive.url = "github:gtrunsec/hive";
     # tools
     vast2nix.url = "github:gtrunsec/vast2nix";
     zeek2nix.url = "github:hardenedlinux/zeek2nix";
@@ -76,6 +77,8 @@
         (data "terranix")
 
         (data "cargoMakeJobs")
+      ] ++ [
+        (containers "containers")
       ];
     } {
       devShells = inputs.std.harvest inputs.self [["_automation" "devshells"]];

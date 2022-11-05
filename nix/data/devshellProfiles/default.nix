@@ -4,7 +4,7 @@
 }: let
   inherit (cell) packages;
 in {
-  default = {pkgs, ...}: {
+  tuc = _: {
     commands = [
       {
         package = cell.packages.tuc;
