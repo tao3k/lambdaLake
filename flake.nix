@@ -26,7 +26,7 @@
     nixpkgs-hardenedlinux.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = {std, ...} @ inputs:
+  outputs = {self, std, hive, ...} @ inputs:
     std.growOn {
       inherit inputs;
 
@@ -61,6 +61,9 @@
         (functions "nixosModules")
         (functions "homeModules")
 
+        (data "homeConfigurations")
+        (data "nixosConfigurations")
+
         (files "configFiles")
         (files "containerJobs")
         (files "dockerComposes")
@@ -73,9 +76,8 @@
         (data "cargoMakeJobs")
       ];
     } {
-      devShells = inputs.std.harvest inputs.self [
-        ["_automation" "devshells"]
-        ["zeek" "devshells"]
-      ];
+      devShells = inputs.std.harvest inputs.self [ ["_automation" "devshells"]];
+    } {
+      nixosConfigurations = hive.lib.nixosConfigurations "nixosConfigurations" self;
     };
 }
