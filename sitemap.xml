@@ -2,36 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gtrunsec.github.io/hunting-lab/categories/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/categories/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/posts/firecracker/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/posts/firecracker/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/posts/hypervisors/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/posts/hypervisors/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/posts/misp/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/posts/misp/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/posts/opencti/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/posts/opencti/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/posts/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/posts/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/search/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/search/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/posts/soc/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/posts/soc/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/posts/soc-aciton/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/posts/soc-aciton/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/tags/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/tags/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/posts/task-styles/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/posts/task-styles/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/posts/tenzir/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/posts/tenzir/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/posts/usage/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/posts/usage/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/posts/vast/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/posts/vast/</loc>
   </url><url>
-    <loc>https://gtrunsec.github.io/hunting-lab/posts/zeek/</loc>
+    <loc>https://gtrunsec.github.io/LambdaHunt/posts/zeek/</loc>
   </url>
 </urlset>
