@@ -13,7 +13,7 @@ in {
       });
       dev = makeNomadJobs ["tenzir/nomad/vast/nixos" "dev" "dev.json"] (nomadJobs.nixos.vast {
         flake = "${self.outPath}#${nixpkgs.system}.services.nixosProfiles.nomad.vast.dev";
-        #flake = "/home/gtrun/ghq/github.com/GTrunSec/lambda-microvm-hunting-lab#nixosConfigurations.nomad-tenzir-opencti";
+        #flake = "/home/gtrun/ghq/github.com/GTrunSec/lambda-microvm-LambdaHunt#nixosConfigurations.nomad-tenzir-opencti";
       });
     };
   };

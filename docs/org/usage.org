@@ -20,7 +20,7 @@ direnv allow
 
 * Docs
 
-- address:  http://localhost:1313/hunting-lab/posts
+- address:  http://localhost:1313/LambdaHunt/posts
 - run *hugo server*
 
 #+begin_src sh :async :exports both :results output

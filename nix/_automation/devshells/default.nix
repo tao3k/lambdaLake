@@ -7,7 +7,7 @@
 in
   l.mapAttrs (_: std.lib.dev.mkShell) {
     default = {...}: {
-      name = "Hunting Lab";
+      name = "Lambda Hunt";
       imports = [
         inputs.cells-lab._automation.devshellProfiles.default
         inputs.cells-lab._automation.devshellProfiles.docs

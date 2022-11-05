@@ -1,6 +1,6 @@
-baseURL = "https://gtrunsec.github.io/hunting-lab"
+baseURL = "https://gtrunsec.github.io/LambdaHunt"
 languageCode = "en-us"
-title = "Hunting Lab"
+title = "Lambda Hunt"
 theme = "cortex"
 
 [params]
