@@ -13,7 +13,7 @@ in
         inputs.cells-lab._automation.devshellProfiles.docs
 
         inputs.cells.data.devshellProfiles.zed
-        inputs.cells.data.devshellProfiles.default
+        inputs.cells.data.devshellProfiles.tuc
       ];
       nixago =
         [
@@ -26,7 +26,6 @@ in
       imports = [
         inputs.cells.zeek.devshellProfiles.default
         inputs.cells.data.devshellProfiles.zed
-        inputs.cells.data.devshellProfiles.default
       ];
     };
     doc = {...}: {

@@ -42,44 +42,46 @@
 
       cellsFrom = ./nix;
 
-      cellBlocks = with std.blockTypes; [
-        (installables "packages")
+      cellBlocks = with std.blockTypes;
+        [
+          (installables "packages")
 
-        (nixago "nixago")
+          (nixago "nixago")
 
-        (data "config")
+          (data "config")
 
-        (functions "devshellProfiles")
-        (devshells "devshells")
+          (functions "devshellProfiles")
+          (devshells "devshells")
 
-        (runnables "entrypoints")
-        (runnables "onPremises")
+          (runnables "entrypoints")
+          (runnables "onPremises")
 
-        (functions "generators")
-        (functions "lib")
+          (functions "generators")
+          (functions "lib")
 
-        (functions "nixosProfiles")
-        (functions "microvmProfiles")
+          (functions "nixosProfiles")
+          (functions "microvmProfiles")
 
-        (functions "nixosModules")
-        (functions "homeModules")
+          (functions "nixosModules")
+          (functions "homeModules")
 
-        (data "homeConfigurations")
-        (data "nixosConfigurations")
+          (data "homeConfigurations")
+          (data "nixosConfigurations")
 
-        (files "configFiles")
-        (files "containerJobs")
-        (files "dockerComposes")
-        (data "schemaProfiles")
+          (files "configFiles")
+          (files "containerJobs")
+          (files "dockerComposes")
+          (data "schemaProfiles")
 
-        (data "consulProfiles")
-        (data "nomadJobs")
-        (data "terranix")
+          (data "consulProfiles")
+          (data "nomadJobs")
+          (data "terranix")
 
-        (data "cargoMakeJobs")
-      ] ++ [
-        (containers "containers")
-      ];
+          (data "cargoMakeJobs")
+        ]
+        ++ [
+          (containers "containers")
+        ];
     } {
       devShells = inputs.std.harvest inputs.self [["_automation" "devshells"]];
     } {

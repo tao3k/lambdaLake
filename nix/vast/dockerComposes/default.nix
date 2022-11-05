@@ -14,9 +14,10 @@ in {
     version = "v2.3.1";
   });
 
-  prod = writeConfig "vast-compose.yaml" (with dmerge; merge (default {
-    version = "\${VERSION}";
-  }) {
-    services.vast.ports = update [0] ["\${VAST_PORT:-42000}:42000"];
-  });
+  prod = writeConfig "vast-compose.yaml" (with dmerge;
+    merge (default {
+      version = "\${VERSION}";
+    }) {
+      services.vast.ports = update [0] ["\${VAST_PORT:-42000}:42000"];
+    });
 }
