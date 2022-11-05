@@ -4,9 +4,6 @@
   driver ? ["podman" "docker"],
   namespace ? "default",
   version ? "5.2.2",
-}: {
-  inputs,
-  cell,
 }: let
   env = {
     NODE_OPTIONS = "--max-old-space-size = 8096";

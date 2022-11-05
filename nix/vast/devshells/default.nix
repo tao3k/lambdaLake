@@ -11,6 +11,7 @@ in
       imports = [
         cell.devshellProfiles.default
         inputs.cells.data.devshellProfiles.tuc
+        inputs.cells.data.devshellProfiles.zed
       ];
     };
   }

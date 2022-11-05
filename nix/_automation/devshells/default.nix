@@ -14,6 +14,8 @@ in
 
         inputs.cells.data.devshellProfiles.zed
         inputs.cells.data.devshellProfiles.tuc
+
+        inputs.cells.opencti.devshellProfiles.default
       ];
       nixago =
         [

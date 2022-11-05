@@ -4,8 +4,8 @@
 }: {
   default = _: {
     imports = [
-      inputs.cells.zeek-action.devshellProfiles.default
-      inputs.cells.tenzir-action.devshellProfiles.default
+      inputs.cells.zeek.devshellProfiles.action
+      inputs.cells.vast.devshellProfiles.action
     ];
     commands = [];
   };

@@ -135,11 +135,11 @@
         "std": "std"
       },
       "locked": {
-        "lastModified": 1667503911,
-        "narHash": "sha256-aVD2xMy7cDAFzAgdKO03U07T68BIHwq98DIyaoW3gmc=",
+        "lastModified": 1667687623,
+        "narHash": "sha256-olKK7H6tRUmURQdVEi1hxA9f4eJBhAAdDKjU+zPPPOw=",
         "owner": "gtrunsec",
         "repo": "cells-lab",
-        "rev": "0038a342f4d2b6aca9ab8f4734a3a6d6c0fd09cf",
+        "rev": "0e5daa3ab3036e3649ada6362794879a199c396e",
         "type": "github"
       },
       "original": {
@@ -2289,11 +2289,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1667634144,
-        "narHash": "sha256-q9TZil/FQAVA5aR4IA1ayIbYRREuN6KbDC65RZFfHlI=",
+        "lastModified": 1667685423,
+        "narHash": "sha256-B8DBp+j2GU+CMFuJo6aEoPKySb/Y/SX7Wnc/nN5wsDA=",
         "owner": "hardenedlinux",
         "repo": "nixpkgs-hardenedlinux",
-        "rev": "5819681a1182ee2e50ce053e20be0792c1145010",
+        "rev": "fbbf170dbac9b01c844d47b5e76185d49c348a90",
         "type": "github"
       },
       "original": {
@@ -3177,11 +3177,11 @@
         "vast-overlay": "vast-overlay"
       },
       "locked": {
-        "lastModified": 1667634302,
-        "narHash": "sha256-r6tGM3UBd4OEK72pIgfewIxHU90sSDYH7c6HQ9T1pkc=",
+        "lastModified": 1667683980,
+        "narHash": "sha256-ndHbG5zgc0vnOqIPvZceK2/e0Yq2XYYdwbq2EPl8jX4=",
         "owner": "gtrunsec",
         "repo": "vast2nix",
-        "rev": "0e7620a21b02dca2bc025ada389c0558896fc3b2",
+        "rev": "7c0f3561a9d33377de59aa5c89c1d20c50a6eb33",
         "type": "github"
       },
       "original": {

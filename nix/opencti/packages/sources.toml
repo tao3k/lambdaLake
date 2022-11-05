@@ -1,0 +1,7 @@
+[opencti-latest]
+src.git = "https://github.com/OpenCTI-Platform/opencti"
+fetch.github = "OpenCTI-Platform/opencti"
+
+[opencti-release]
+fetch.github = "OpenCTI-Platform/opencti"
+src.github_tag = "OpenCTI-Platform/opencti"
