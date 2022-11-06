@@ -13,12 +13,18 @@ in {
   # docker-compose-prod = (import ./docker-compose args).prod;
   #
   secrets-for-gpg-from-env = makeSopsScript {
-    name = "opencti";
+    name = "opencti-env-sops";
     env = {
       manifest = ./secrets-opencti.yaml;
-      vars = ["OPENCTI_ADMIN_EMAIL" "OPENCTI_ADMIN_PASSWORD"];
+      vars = [
+        "OPENCTI_ADMIN_EMAIL"
+        "OPENCTI_ADMIN_PASSWORD"
+      ];
     };
-    entrypoint = "echo $OPENCTI_ADMIN_EMAIL";
+    entrypoint = ''
+    echo $OPENCTI_ADMIN_EMAIL \t
+    echo $OPENCTI_ADMIN_PASSWORD
+    '';
     searchPaths.bin = [];
   };
 }
