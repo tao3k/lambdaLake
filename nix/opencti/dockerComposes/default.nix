@@ -1,6 +1,9 @@
 {
   inputs,
   cell,
-}: rec {
-  compose = _args: import ./compose.nix _args;
+}: let
+  inherit (cell.lib) mkCompose;
+  inherit (inputs.cells-lab._writers.lib) writeConfig;
+in {
+  default = writeConfig "docker-compose.yaml" (mkCompose {});
 }

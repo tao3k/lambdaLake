@@ -20,8 +20,7 @@ in
       nixago =
         [
           inputs.cells-lab._automation.nixago.treefmt
-        ]
-        ++ l.attrValues inputs.cells.vast.nixago;
+        ];
     };
     zeek = {...}: {
       name = "Zeek Project";
@@ -35,5 +34,9 @@ in
       imports = [
         inputs.cells-lab._automation.devshellProfiles.docs
       ];
+    };
+    generator = {...}: {
+      name = "Generator";
+      nixago = l.attrValues inputs.cells.vast.nixago;
     };
   }

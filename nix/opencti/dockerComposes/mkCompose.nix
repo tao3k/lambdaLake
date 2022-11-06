@@ -1,4 +1,4 @@
-{version ? "5.2.3"}: let
+{version ? "5.3.17"}: let
   # based on https://github.com/OpenCTI-Platform/docker/blob/master/docker-compose.yml
   env.opencti-common = {
     OPENCTI_URL = "http://opencti:8080";
