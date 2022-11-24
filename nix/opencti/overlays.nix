@@ -3,10 +3,6 @@
   cell,
 }: let
   inherit (inputs) nixpkgs;
-  l = nixpkgs.lib // builtins;
-
-  patches = src: path:
-    map (v: "${src}/opencti-platform/${path}/patch" + "/${v}") (l.attrNames (l.readDir "${src}/opencti-platform/${path}/patch"));
 in {
   opencti = final: prev: {
     opencti-sources = prev.callPackage ./packages/_sources/generated.nix {};
@@ -26,6 +22,7 @@ in {
         })
       ];
     };
+
     opencti-front = (import (final.opencti-patchSrc + "/opencti-platform/opencti-front") {pkgs = prev;}).overrideAttrs (old: {
       buildInputs = old.buildInputs ++ [final.python3];
       preBuild = ''
@@ -36,6 +33,7 @@ in {
         cp --recursive ./builder/prod/build/* $out/build
       '';
     });
+
     opencti-graphql = (import (final.opencti-patchSrc + "/opencti-platform/opencti-graphql") {pkgs = prev;}).overrideAttrs (old: {
       buildInputs = old.buildInputs ++ [final.opencti-python];
       buildPhase = ''
