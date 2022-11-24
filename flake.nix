@@ -16,7 +16,11 @@
     # tools
     vast2nix.url = "github:gtrunsec/vast2nix";
     zeek2nix.url = "github:hardenedlinux/zeek2nix";
+
     # threatbus2nix.url = "github:gtrunsec/threatbus2nix";
+
+    opencti.url = "github:gtrunsec/opencti/nix";
+    opencti.flake = false;
 
     nixpkgs-hardenedlinux.url = "github:hardenedlinux/nixpkgs-hardenedlinux";
     nixpkgs-hardenedlinux.inputs.nixpkgs.follows = "nixpkgs";
@@ -62,6 +66,7 @@
 
           (functions "nixosModules")
           (functions "homeModules")
+          (functions "overlays")
 
           (data "homeConfigurations")
           (data "nixosConfigurations")
@@ -82,6 +87,7 @@
         ];
     } {
       devShells = inputs.std.harvest inputs.self [["automation" "devshells"]];
+      overlays = (inputs.std.harvest inputs.self [["opencti" "overlays"]]).x86_64-linux;
     } {
       nixosConfigurations = hive.lib.nixosConfigurations "nixosConfigurations" self;
     };

@@ -1,7 +1,27 @@
 {
+    "opencti": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "opencti",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "OpenCTI-Platform",
+            "repo": "opencti",
+            "rev": "5.4.0",
+            "sha256": "sha256-CVW/qGUSqLVVxnnKmbp1L5D0zrOb27L6nBtkYETeXW8=",
+            "type": "github"
+        },
+        "version": "5.4.0"
+    },
     "opencti-latest": {
         "cargoLocks": null,
-        "date": "2022-11-05",
+        "date": "2022-11-24",
         "extract": null,
         "name": "opencti-latest",
         "passthru": null,
@@ -13,30 +33,10 @@
             "name": null,
             "owner": "OpenCTI-Platform",
             "repo": "opencti",
-            "rev": "b0fb1431c0fb9a1ec6a27c741803fda3dd31297f",
-            "sha256": "sha256-0u7jb2o3UKSEhym+VGIg0g/y9d6Uz97nC1YeszZLN30=",
+            "rev": "af2f78abe891b6ab53f90615b2e504a4a77e394c",
+            "sha256": "sha256-fVeRjC+A/VbBszth2br46a8R213Bv8UFQYXe7qY8950=",
             "type": "github"
         },
-        "version": "b0fb1431c0fb9a1ec6a27c741803fda3dd31297f"
-    },
-    "opencti-release": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "opencti-release",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "OpenCTI-Platform",
-            "repo": "opencti",
-            "rev": "5.3.17",
-            "sha256": "sha256-2HreEl5+49EGVkHpclEMEtYcl2qjN8JTFKRzcKZlxOs=",
-            "type": "github"
-        },
-        "version": "5.3.17"
+        "version": "af2f78abe891b6ab53f90615b2e504a4a77e394c"
     }
 }
