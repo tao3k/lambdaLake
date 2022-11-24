@@ -20,7 +20,10 @@ in {
       name = "opencti-patch-src";
       src = final.opencti-sources.opencti.src;
       patches = [
-        ./packages/nix.patch
+        (prev.fetchpatch {
+          url = "https://github.com/GTrunSec/opencti/commit/ba221a7465f8d9d5ca6d3d1f970312c994e2bc27.patch";
+          hash = "sha256-vU4q2qCb7rfl0PS5iGnnyWD6KZqu3i/MmYPx5BbGHec=";
+        })
       ];
     };
     opencti-front = (import (final.opencti-patchSrc + "/opencti-platform/opencti-front") {pkgs = prev;}).overrideAttrs (old: {
@@ -33,7 +36,7 @@ in {
         cp --recursive ./builder/prod/build/* $out/build
       '';
     });
-    opencti-graphql = (import (inputs.opencti + "/opencti-platform/opencti-graphql") {pkgs = prev;}).overrideAttrs (old: {
+    opencti-graphql = (import (final.opencti-patchSrc + "/opencti-platform/opencti-graphql") {pkgs = prev;}).overrideAttrs (old: {
       buildInputs = old.buildInputs ++ [final.opencti-python];
       buildPhase = ''
         yarn build:prod
