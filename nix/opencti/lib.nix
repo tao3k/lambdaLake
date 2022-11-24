@@ -1,5 +1,6 @@
-{ inputs, cell }:
-
 {
+  inputs,
+  cell,
+}: {
   mkCompose = import ./dockerComposes/mkCompose.nix;
 }

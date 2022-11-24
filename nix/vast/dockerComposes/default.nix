@@ -3,7 +3,7 @@
   cell,
 } @ args: let
   inherit (inputs.cells.containers.lib) nixpkgs;
-  inherit (inputs.cells-lab._writers.lib) writeConfig;
+  inherit (inputs.cells-lab.writers.lib) writeConfig;
   inherit (inputs.std) dmerge;
 
   default = import ./vast-compose.nix;

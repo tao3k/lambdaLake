@@ -1,13 +1,11 @@
 {
   inputs = {
     nixpkgs.follows = "cells-lab/nixpkgs";
-    latest.follows = "cells-lab/latest";
     nixos.follows = "hive/nixos";
   };
 
   inputs = {
     cells-lab.url = "github:gtrunsec/cells-lab";
-
     org-roam-book-template.follows = "cells-lab/org-roam-book-template";
     std.follows = "hive/std";
 
@@ -83,7 +81,7 @@
           (containers "containers")
         ];
     } {
-      devShells = inputs.std.harvest inputs.self [["_automation" "devshells"]];
+      devShells = inputs.std.harvest inputs.self [["automation" "devshells"]];
     } {
       nixosConfigurations = hive.lib.nixosConfigurations "nixosConfigurations" self;
     };

@@ -22,8 +22,8 @@ in {
       ];
     };
     entrypoint = ''
-    echo $OPENCTI_ADMIN_EMAIL \t
-    echo $OPENCTI_ADMIN_PASSWORD
+      echo $OPENCTI_ADMIN_EMAIL \t
+      echo $OPENCTI_ADMIN_PASSWORD
     '';
     searchPaths.bin = [];
   };

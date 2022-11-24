@@ -9,18 +9,17 @@ in
     default = {...}: {
       name = "Lambda Hunt";
       imports = [
-        inputs.cells-lab._automation.devshellProfiles.default
-        inputs.cells-lab._automation.devshellProfiles.docs
+        inputs.cells-lab.automation.devshellProfiles.default
+        inputs.cells-lab.automation.devshellProfiles.docs
 
         inputs.cells.data.devshellProfiles.zed
         inputs.cells.data.devshellProfiles.tuc
 
         inputs.cells.opencti.devshellProfiles.default
       ];
-      nixago =
-        [
-          inputs.cells-lab._automation.nixago.treefmt
-        ];
+      nixago = [
+        inputs.cells-lab.automation.nixago.treefmt
+      ];
     };
     zeek = {...}: {
       name = "Zeek Project";
@@ -32,7 +31,7 @@ in
     doc = {...}: {
       name = "Documentation";
       imports = [
-        inputs.cells-lab._automation.devshellProfiles.docs
+        inputs.cells-lab.automation.devshellProfiles.docs
       ];
     };
     generator = {...}: {

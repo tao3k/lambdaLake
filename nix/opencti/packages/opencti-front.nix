@@ -19,4 +19,7 @@
       subsystemInfo.nodejs = 18;
     }
   ];
-}).packages.${system}.default
+})
+.packages
+.${system}
+.default
