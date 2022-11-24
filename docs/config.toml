@@ -1,4 +1,4 @@
-baseURL = "https://gtrunsec.github.io/lambdaHunt"
+baseURL = "https://exquisite-meringue-7af06d.netlify.app/"
 languageCode = "en-us"
 title = "Lambda Hunt"
 theme = "cortex"
