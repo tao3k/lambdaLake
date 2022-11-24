@@ -13,11 +13,11 @@
             "name": null,
             "owner": "OpenCTI-Platform",
             "repo": "opencti",
-            "rev": "5.4.0",
-            "sha256": "sha256-CVW/qGUSqLVVxnnKmbp1L5D0zrOb27L6nBtkYETeXW8=",
+            "rev": "5.4.1",
+            "sha256": "sha256-p1RBnQcEVHevNHEiZ2RsxMeWi4o6B0dUxmAgChikiw8=",
             "type": "github"
         },
-        "version": "5.4.0"
+        "version": "5.4.1"
     },
     "opencti-latest": {
         "cargoLocks": null,
@@ -33,10 +33,10 @@
             "name": null,
             "owner": "OpenCTI-Platform",
             "repo": "opencti",
-            "rev": "af2f78abe891b6ab53f90615b2e504a4a77e394c",
-            "sha256": "sha256-fVeRjC+A/VbBszth2br46a8R213Bv8UFQYXe7qY8950=",
+            "rev": "51c2ea90933804cdda874844cc888261d2e13510",
+            "sha256": "sha256-p1RBnQcEVHevNHEiZ2RsxMeWi4o6B0dUxmAgChikiw8=",
             "type": "github"
         },
-        "version": "af2f78abe891b6ab53f90615b2e504a4a77e394c"
+        "version": "51c2ea90933804cdda874844cc888261d2e13510"
     }
 }

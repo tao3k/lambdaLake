@@ -10,6 +10,10 @@
     std.follows = "hive/std";
 
     hive.url = "github:gtrunsec/hive";
+
+    data-science-threat-intelligence.url = "github:gtrunsec/data-science-threat-intelligence";
+    opencti.url = "github:gtrunsec/opencti/nix";
+    opencti.flake = false;
   };
 
   inputs = {

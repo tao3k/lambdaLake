@@ -3,24 +3,24 @@
 {
   opencti = {
     pname = "opencti";
-    version = "5.4.0";
+    version = "5.4.1";
     src = fetchFromGitHub ({
       owner = "OpenCTI-Platform";
       repo = "opencti";
-      rev = "5.4.0";
+      rev = "5.4.1";
       fetchSubmodules = false;
-      sha256 = "sha256-CVW/qGUSqLVVxnnKmbp1L5D0zrOb27L6nBtkYETeXW8=";
+      sha256 = "sha256-p1RBnQcEVHevNHEiZ2RsxMeWi4o6B0dUxmAgChikiw8=";
     });
   };
   opencti-latest = {
     pname = "opencti-latest";
-    version = "af2f78abe891b6ab53f90615b2e504a4a77e394c";
+    version = "51c2ea90933804cdda874844cc888261d2e13510";
     src = fetchFromGitHub ({
       owner = "OpenCTI-Platform";
       repo = "opencti";
-      rev = "af2f78abe891b6ab53f90615b2e504a4a77e394c";
+      rev = "51c2ea90933804cdda874844cc888261d2e13510";
       fetchSubmodules = false;
-      sha256 = "sha256-fVeRjC+A/VbBszth2br46a8R213Bv8UFQYXe7qY8950=";
+      sha256 = "sha256-p1RBnQcEVHevNHEiZ2RsxMeWi4o6B0dUxmAgChikiw8=";
     });
     date = "2022-11-24";
   };
