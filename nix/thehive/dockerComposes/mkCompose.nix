@@ -1,6 +1,6 @@
 {version ? "latest"}: let
   networks = {
-    default.driver = "bridge";
+    thehive.driver = "bridge";
   };
 
   env.minio = {
@@ -14,61 +14,38 @@
   env.cassandra = {
     CASSANDRA_CLUSTER_NAME = "TheHive";
   };
-
-  env.connector-history =
-    {
-      CONNECTOR_ID = "\${CONNECTOR_HISTORY_ID}"; # Valid UUIDv4
-      CONNECTOR_TYPE = "STREAM";
-      CONNECTOR_NAME = "History";
-      CONNECTOR_SCOPE = "history";
-    }
-    // env.opencti-common
-    // env.connector-common;
-
-  env.connector-common = {
-    CONNECTOR_CONFIDENCE_LEVEL = 15; # From 0 (Unknown) to 100 (Fully trusted)
-    CONNECTOR_LOG_LEVEL = "info";
-  };
-
-  env.connector-export-file-stix =
-    {
-      CONNECTOR_ID = "\${CONNECTOR_EXPORT_FILE_STIX_ID}";
-      CONNECTOR_TYPE = "INTERNAL_EXPORT_FILE";
-      CONNECTOR_NAME = "ExportFileCsv";
-      CONNECTOR_SCOPE = "text/csv";
-    }
-    // env.opencti-common
-    // env.connector-common;
-
-  env.connector-export-file-csv =
-    {
-      CONNECTOR_ID = "\${CONNECTOR_EXPORT_FILE_CSV_ID}";
-      CONNECTOR_TYPE = "INTERNAL_EXPORT_FILE";
-      CONNECTOR_NAME = "ExportFileCsv";
-      CONNECTOR_SCOPE = "text/plain";
-    }
-    // env.opencti-common
-    // env.connector-common;
-
-  env.connector-export-file-txt =
-    {
-      CONNECTOR_ID = "\${CONNECTOR_EXPORT_FILE_TXT_ID}";
-      CONNECTOR_TYPE = "INTERNAL_EXPORT_FILE";
-      CONNECTOR_NAME = "ExportFileTxt";
-      CONNECTOR_SCOPE = "text/plain";
-    }
-    // env.opencti-common
-    // env.connector-common;
 in {
   version = "3";
+  inherit networks;
 
   services.thehive = {
     image = "strangebee/thehive:latest";
     restart = "unless-stopped";
-    volumes = ["redisdata:/data"];
+    volumes = ["thehivedata:/etc/thehive/application.conf"];
+    enviroment = {
+      JVM_OPT = "-Xms1024M -Xmx1024M";
+    };
+    ports = ["0.0.0.0:9000:9000"];
+    command = [
+      "--secret"
+      "lab123456789"
+      "--cql-hostnames"
+      "cassandra"
+      "--index-backend"
+      "elasticsearch"
+      "--es-hostnames"
+      "elasticsearch"
+      "--s3-endpoint"
+      "http://minio:9002"
+      "--s3-access-key"
+      "minioadmin"
+      "--s3-secret-key"
+      "minioadmin"
+      "--s3-use-path-access-style"
+      "--no-config-cortex"
+    ];
     depends_on = ["cassandra" "elasticsearch" "cortex"];
     mem_limit = "1500m";
-    ports = ["0.0.0.0:9000:9000"];
   };
 
   services.cassandra = {
@@ -80,12 +57,12 @@ in {
   };
 
   services.minio = {
-    image = "minio/minio:RELEASE.2022-02-26T02-54-46Z";
-    restart = "always";
-    volumes = ["s3data:/data"];
+    image = "quay.io/minio/minio";
+    restart = "unless-stopped";
+    volumes = ["miniodata:/data"];
     ports = ["9000:9000"];
     environment = env.minio;
-    command = "server /data";
+    command = ["minio" "server" "/data" "--console-address" ":9002"];
     healthcheck = {
       test = ["CMD" "curl" "-f" "http://localhost:9000/minio/health/live"];
       interval = "30s";
@@ -97,10 +74,12 @@ in {
   services.elasticsearch = {
     image = "docker.elastic.co/elasticsearch/elasticsearch:7.17.4";
     restart = "unless-stopped";
-    volumes = ["esdata:/usr/share/elasticsearch/data"];
+    volumes = ["elasticsearchdata:/usr/share/elasticsearch/data"];
     environment = [
       "discovery.type=single-node"
       "xpack.ml.enabled=false"
+      "http.host=0.0.0.0"
+      "ES_JAVA_OPTS=-Xms256m -Xmx256m"
     ];
     ulimits = {
       memlock = {
@@ -112,22 +91,31 @@ in {
         hard = 65536;
       };
     };
-    networks = "default";
+    networks = "thehive";
   };
 
   services.cortex = {
     image = "thehiveproject/cortex:${version}";
     restart = "unless-stopped";
+    ports = ["0.0.0.0:9001:9001"];
     environment = {
       job_directory = "/opt/cortex/jobs";
     };
+    volume = [
+      "cortexdata:/var/run/docker.sock"
+      "cortexdata:/opt/cortex/jobs"
+      "cortexdata:/var/log/cortex"
+      "cortexdata:/cortex/application.conf"
+    ];
     depends_on = ["elasticsearch"];
+    networks = "thevhie";
   };
 
   volumes = {
-    esdata = {};
-    s3data = {};
-    redisdata = {};
-    amqpdata = {};
+    miniodata = {};
+    cassandradata = {};
+    elasticsearchdata = {};
+    cortexdata = {};
+    thehivedata = {};
   };
 }
