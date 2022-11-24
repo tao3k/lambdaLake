@@ -2917,23 +2917,6 @@
         "type": "github"
       }
     },
-    "opencti": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1669280944,
-        "narHash": "sha256-31jbDJQ67CP4G+5I9djQ6c3rKllwXYRj01ojlaDzOXQ=",
-        "owner": "gtrunsec",
-        "repo": "opencti",
-        "rev": "1ef49faa4d12538c47a9bd0a0dd6fb146ccacd22",
-        "type": "github"
-      },
-      "original": {
-        "owner": "gtrunsec",
-        "ref": "nix",
-        "repo": "opencti",
-        "type": "github"
-      }
-    },
     "org-roam-book-template": {
       "inputs": {
         "cortex": "cortex",
@@ -3166,7 +3149,6 @@
           "nixpkgs"
         ],
         "nixpkgs-hardenedlinux": "nixpkgs-hardenedlinux",
-        "opencti": "opencti",
         "org-roam-book-template": [
           "cells-lab",
           "org-roam-book-template"

@@ -18,10 +18,6 @@
     zeek2nix.url = "github:hardenedlinux/zeek2nix";
 
     # threatbus2nix.url = "github:gtrunsec/threatbus2nix";
-
-    opencti.url = "github:gtrunsec/opencti/nix";
-    opencti.flake = false;
-
     nixpkgs-hardenedlinux.url = "github:hardenedlinux/nixpkgs-hardenedlinux";
     nixpkgs-hardenedlinux.inputs.nixpkgs.follows = "nixpkgs";
   };
