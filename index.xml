@@ -2,115 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lambda Hunt</title>
-    <link>https://gtrunsec.github.io/LambdaHunt/</link>
+    <link>https://gtrunsec.github.io/lambdaHunt/</link>
     <description>Recent content on Lambda Hunt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://gtrunsec.github.io/LambdaHunt/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://gtrunsec.github.io/lambdaHunt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data</title>
-      <link>https://gtrunsec.github.io/LambdaHunt/posts/data/</link>
+      <link>https://gtrunsec.github.io/lambdaHunt/posts/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/LambdaHunt/posts/data/</guid>
+      <guid>https://gtrunsec.github.io/lambdaHunt/posts/data/</guid>
       <description>Packages tuc </description>
     </item>
     
     <item>
       <title>firecracker</title>
-      <link>https://gtrunsec.github.io/LambdaHunt/posts/firecracker/</link>
+      <link>https://gtrunsec.github.io/lambdaHunt/posts/firecracker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/LambdaHunt/posts/firecracker/</guid>
+      <guid>https://gtrunsec.github.io/lambdaHunt/posts/firecracker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hypervisors</title>
-      <link>https://gtrunsec.github.io/LambdaHunt/posts/hypervisors/</link>
+      <link>https://gtrunsec.github.io/lambdaHunt/posts/hypervisors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/LambdaHunt/posts/hypervisors/</guid>
+      <guid>https://gtrunsec.github.io/lambdaHunt/posts/hypervisors/</guid>
       <description>https://firecracker-microvm.github.io/ </description>
     </item>
     
     <item>
       <title>MISP</title>
-      <link>https://gtrunsec.github.io/LambdaHunt/posts/misp/</link>
+      <link>https://gtrunsec.github.io/lambdaHunt/posts/misp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/LambdaHunt/posts/misp/</guid>
+      <guid>https://gtrunsec.github.io/lambdaHunt/posts/misp/</guid>
       <description>MISP </description>
     </item>
     
     <item>
       <title>OpenCTI</title>
-      <link>https://gtrunsec.github.io/LambdaHunt/posts/opencti/</link>
+      <link>https://gtrunsec.github.io/lambdaHunt/posts/opencti/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/LambdaHunt/posts/opencti/</guid>
+      <guid>https://gtrunsec.github.io/lambdaHunt/posts/opencti/</guid>
       <description>OpenCTI </description>
     </item>
     
     <item>
       <title>SOC</title>
-      <link>https://gtrunsec.github.io/LambdaHunt/posts/soc/</link>
+      <link>https://gtrunsec.github.io/lambdaHunt/posts/soc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/LambdaHunt/posts/soc/</guid>
+      <guid>https://gtrunsec.github.io/lambdaHunt/posts/soc/</guid>
       <description>MISP </description>
     </item>
     
     <item>
       <title>SOC Aciton</title>
-      <link>https://gtrunsec.github.io/LambdaHunt/posts/soc-aciton/</link>
+      <link>https://gtrunsec.github.io/lambdaHunt/posts/soc-aciton/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/LambdaHunt/posts/soc-aciton/</guid>
+      <guid>https://gtrunsec.github.io/lambdaHunt/posts/soc-aciton/</guid>
       <description> tags SOC Github Action Zeek Action </description>
     </item>
     
     <item>
       <title>Task Styles</title>
-      <link>https://gtrunsec.github.io/LambdaHunt/posts/task-styles/</link>
+      <link>https://gtrunsec.github.io/lambdaHunt/posts/task-styles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/LambdaHunt/posts/task-styles/</guid>
+      <guid>https://gtrunsec.github.io/lambdaHunt/posts/task-styles/</guid>
       <description>Branch develop -&amp;gt; dev production -&amp;gt; prod release staging next </description>
     </item>
     
     <item>
       <title>Tenzir</title>
-      <link>https://gtrunsec.github.io/LambdaHunt/posts/tenzir/</link>
+      <link>https://gtrunsec.github.io/lambdaHunt/posts/tenzir/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/LambdaHunt/posts/tenzir/</guid>
+      <guid>https://gtrunsec.github.io/lambdaHunt/posts/tenzir/</guid>
       <description> tags Vast Packages command: :wrap export json nix eval --json --option warn-dirty false .\#__std.actions.x86_64-linux.tenzir.packages | jq . { &amp;#34;vast-latest&amp;#34;: { &amp;#34;build&amp;#34;: &amp;#34;/nix/store/y7bk34ak3ml70pggp8id1kvjk4k8dar2-build&amp;#34;, &amp;#34;bundle&amp;#34;: &amp;#34;/nix/store/fz1agqgjf0vdjf3qc6pgh7qrs9zbdbr1-bundle&amp;#34;, &amp;#34;bundleAppImage&amp;#34;: &amp;#34;/nix/store/80hz5abrw8019y11wrspfcmr1wgfahvx-bundleAppImage&amp;#34;, &amp;#34;bundleImage&amp;#34;: &amp;#34;/nix/store/g199jxyqjgr2amjilfgdqjcnzlhx4hd4-bundleImage&amp;#34;, &amp;#34;install&amp;#34;: &amp;#34;/nix/store/caqrazmal5a5sg3dnmrqc9a60s7x1jc5-install&amp;#34;, &amp;#34;remove&amp;#34;: &amp;#34;/nix/store/pw1i4ri4iym8q7ayp0cxasmnfnsliaip-remove&amp;#34;, &amp;#34;upgrade&amp;#34;: &amp;#34;/nix/store/dkpilznmc1lr86d73yjnf1hzwagiv1nw-upgrade&amp;#34; }, &amp;#34;vast-n2c-latest&amp;#34;: { &amp;#34;build&amp;#34;: &amp;#34;/nix/store/dpsn4lyd0041qaxnjai719lv8labnjg0-build&amp;#34;, &amp;#34;bundle&amp;#34;: &amp;#34;/nix/store/6rd7q9jidkr77x50zrpgblwiif99ifin-bundle&amp;#34;, &amp;#34;bundleAppImage&amp;#34;: &amp;#34;/nix/store/w2hgh776b0ywqwi1wzj1qiymr2f9y4ii-bundleAppImage&amp;#34;, &amp;#34;bundleImage&amp;#34;: &amp;#34;/nix/store/7qbgyfvfk0aysga430p9bmayk2qdnij7-bundleImage&amp;#34;, &amp;#34;install&amp;#34;: &amp;#34;/nix/store/ibrxql8mbykwyp354ykidlr9d2k9p5c9-install&amp;#34;, &amp;#34;remove&amp;#34;: &amp;#34;/nix/store/pdnxcf4y27qsrdfha1yzz9kw0y648k6h-remove&amp;#34;, &amp;#34;upgrade&amp;#34;: &amp;#34;/nix/store/168bifks1k7xzwja4l7kczargw62a3ab-upgrade&amp;#34; }, &amp;#34;vast-n2c-release&amp;#34;: { &amp;#34;build&amp;#34;: &amp;#34;/nix/store/i4ywnpghp69a1sjbnsmpxpvqsllrmmf9-build&amp;#34;, &amp;#34;bundle&amp;#34;: &amp;#34;/nix/store/daranlirnn2fn8zgmnxajnhw5xvdhp60-bundle&amp;#34;, &amp;#34;bundleAppImage&amp;#34;: &amp;#34;/nix/store/rixh8bcdvx5mch16mhjlva2ah4irv2qy-bundleAppImage&amp;#34;, &amp;#34;bundleImage&amp;#34;: &amp;#34;/nix/store/crk3qf58p1schv39b7zjzc77fmnjdlwd-bundleImage&amp;#34;, &amp;#34;install&amp;#34;: &amp;#34;/nix/store/gn5ds0p810lqfqqjmwmizi49fa2gpb8l-install&amp;#34;, &amp;#34;remove&amp;#34;: &amp;#34;/nix/store/4nlcmfzfih4afsaqksfa9av4mw17g9h1-remove&amp;#34;, &amp;#34;upgrade&amp;#34;: &amp;#34;/nix/store/b57rr12gzcc5lpiyc971jlxgpap0xjz8-upgrade&amp;#34; }, &amp;#34;vast-release&amp;#34;: { &amp;#34;build&amp;#34;: &amp;#34;/nix/store/2s4vcpj9zv5pl43knb2nzx5jrsrkrls8-build&amp;#34;, &amp;#34;bundle&amp;#34;: &amp;#34;/nix/store/dvzhqm1jdz8anfm3dxxhxc4hdqx6qhra-bundle&amp;#34;, &amp;#34;bundleAppImage&amp;#34;: &amp;#34;/nix/store/2pxblnaqbvq4v4di7rnl2f78d8gmr1na-bundleAppImage&amp;#34;, &amp;#34;bundleImage&amp;#34;: &amp;#34;/nix/store/3c23xvc1pjiqfyhv637yxrhsds5yqr4h-bundleImage&amp;#34;, &amp;#34;install&amp;#34;: &amp;#34;/nix/store/d25w7p4q246psmazyk20915izsn2s3gc-install&amp;#34;, &amp;#34;remove&amp;#34;: &amp;#34;/nix/store/4wajbvpxgpmgava6ifpz1j7br3pkrfwi-remove&amp;#34;, &amp;#34;upgrade&amp;#34;: &amp;#34;/nix/store/kmd7q3y7nxwcc4v0xxrnxlikfmx6iss7-upgrade&amp;#34; } } </description>
     </item>
     
     <item>
       <title>Usage</title>
-      <link>https://gtrunsec.github.io/LambdaHunt/posts/usage/</link>
+      <link>https://gtrunsec.github.io/lambdaHunt/posts/usage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/LambdaHunt/posts/usage/</guid>
+      <guid>https://gtrunsec.github.io/lambdaHunt/posts/usage/</guid>
       <description>Enter Shell With nix develop nix develop &amp;amp;&amp;amp; menu With direnv direnv allow Docs address: http://localhost:1313/LambdaHunt/posts run hugo server nix develop .#doc --command mkdoc server sync your docs nix develop .#doc --command mkdoc </description>
     </item>
     
     <item>
       <title>Vast</title>
-      <link>https://gtrunsec.github.io/LambdaHunt/posts/vast/</link>
+      <link>https://gtrunsec.github.io/lambdaHunt/posts/vast/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/LambdaHunt/posts/vast/</guid>
+      <guid>https://gtrunsec.github.io/lambdaHunt/posts/vast/</guid>
       <description>tags Tenzir Vast.yaml namespace: vast-config-&amp;lt;state&amp;gt; prod -&amp;gt; production std run //tenzir//generator:config-vast-prod generating config to nixosModule of the vast services.vast.settings = inputs.data-merge.merge inputs.cells-lab.tenzir.generator.prod { vast.endpoint = &amp;#34;192.168.1.1:4000&amp;#34;; }; generating config to NomadJobs of the vast deployNomadJobs.vast.prod = inputs.data-merge.merge inputs.cells.tenzir.generator.prod { vast.endpoint = &amp;#34;192.168.1.1:4000&amp;#34;; # &amp;lt;custom settings&amp;gt; }; deploy std //tenzir//deploy:vast-prod dockerComposes dev std //vast/dockerComposes/dev:explore services: vast: environment: {} image: tenzir/vast:${VERSION} ports: - ${VAST_PORT:-42000}:42000 restart: always volumes: - vastdata:/var/lib/vast version: &amp;#39;3&amp;#39; volumes: vastdata: {} prod std //vast/dockerComposes/prod:explore services: vast: environment: {} image: tenzir/vast:${VERSION} ports: - ${VAST_PORT:-42000}:42000 restart: always volumes: - vastdata:/var/lib/vast version: &amp;#39;3&amp;#39; volumes: vastdata: {} release std //vast/dockerComposes/release:explore services: vast: environment: {} image: tenzir/vast:v2.</description>
     </item>
     
     <item>
       <title>Zeek</title>
-      <link>https://gtrunsec.github.io/LambdaHunt/posts/zeek/</link>
+      <link>https://gtrunsec.github.io/lambdaHunt/posts/zeek/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gtrunsec.github.io/LambdaHunt/posts/zeek/</guid>
+      <guid>https://gtrunsec.github.io/lambdaHunt/posts/zeek/</guid>
       <description>Zeek Action </description>
     </item>
     
