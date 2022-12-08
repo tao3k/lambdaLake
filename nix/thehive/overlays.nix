@@ -4,10 +4,19 @@
 }: {
   default = final: prev: {
     bower2nix = import (inputs.cells.common.lib.__inputs__.bower2nix + "/release.nix") {pkgs = inputs.nixpkgs;};
-    theHive-bower = inputs.nixpkgs.buildBowerComponents {
+
+    thehive-patchSrc = prev.applyPatches {
+      name = "thehive-patchSrc";
+      src = inputs.thehive;
+      patches = [
+        ./packages/bower.patch
+      ];
+    };
+
+    thehive-bower = inputs.nixpkgs.buildBowerComponents {
       name = "theHive-bower";
       generated = ./packages/bower-generated.nix;
-      src = inputs.thehive + "/frontend";
+      src = final.thehive-patchSrc + "/frontend";
     };
     thehive-frontend = final.buildNpmPackage {
       name = "thehive-frontend";

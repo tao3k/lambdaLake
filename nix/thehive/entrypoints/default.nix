@@ -7,9 +7,9 @@
 in {
   gen = writeShellApplication {
     name = "gen";
-    runtimeInputs = [cell.packages.bower2nix];
+    runtimeInputs = [cell.lib.nixpkgs.bower2nix];
     text = ''
-    bower2nix ${inputs.thehive}/frontend/bower.json nix/thehive/packages/bower-generated.nix
+    bower2nix ${cell.lib.nixpkgs.thehive-patchSrc}/frontend/bower.json nix/thehive/packages/bower-generated.nix
     '';
   };
 }

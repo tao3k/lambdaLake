@@ -1,0 +1,15 @@
+diff --git a/frontend/bower.json b/frontend/bower.json
+index 0a5b442d..2f22fbb1 100644
+--- a/frontend/bower.json
++++ b/frontend/bower.json
+@@ -39,8 +39,8 @@
+     "angular-markdown-editor-ghiscoding": "1.1.5",
+     "angular-highlightjs": "^0.7.1",
+     "highlight.js.origin": "^9.15.6",
+-    "angular-ui-ace": "bower",
+-    "angular-page-loader": "*",
++    "angular-ui-ace": "0.2.3",
++    "angular-page-loader": "https://github.com/codekraft-studio/angular-page-loader.git#0457468",
+     "angular-images-resizer": "^2.0.3",
+     "angular-base64-upload": "^0.1.19",
+     "angular-ui-sortable": "^0.19.0",
