@@ -1,5 +1,22 @@
 {
   "nodes": {
+    "bower2nix": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1668945623,
+        "narHash": "sha256-9KQESlyFolvpQgkI+cxclOb1MhibPF8SPk/VahQduW8=",
+        "owner": "rvl",
+        "repo": "bower2nix",
+        "rev": "5ddf92ff9346df87a7955545b6faaa473d4ce842",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rvl",
+        "ref": "refs/pull/23/head",
+        "repo": "bower2nix",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "locked": {
         "lastModified": 1667077288,
@@ -31,9 +48,31 @@
         "type": "github"
       }
     },
+    "npm-buildpackage": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1668423201,
+        "narHash": "sha256-xflwwNUqHYSsfqrXkTmu0lUTPh8ZrA1igcrrc6P3XVc=",
+        "owner": "serokell",
+        "repo": "nix-npm-buildpackage",
+        "rev": "200e47aabd2b55993561c47e8390c89bdeb18b8a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "serokell",
+        "repo": "nix-npm-buildpackage",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
+        "bower2nix": "bower2nix",
         "nixpkgs": "nixpkgs",
+        "npm-buildpackage": "npm-buildpackage",
         "sbt": "sbt"
       }
     },

@@ -5874,6 +5874,7 @@
           "hive",
           "std"
         ],
+        "thehive": "thehive",
         "vast2nix": "vast2nix",
         "zeek2nix": "zeek2nix"
       }
@@ -6624,6 +6625,22 @@
       "original": {
         "owner": "divnix",
         "repo": "std",
+        "type": "github"
+      }
+    },
+    "thehive": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663055138,
+        "narHash": "sha256-E5FVJi1aDC0YYQ7j7j8yzqF5/zs7XcsV6Z0Sime3OJ4=",
+        "owner": "TheHive-Project",
+        "repo": "TheHive",
+        "rev": "b6649bb58938a414de9f0505cc0a1dad15f0d0ef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "TheHive-Project",
+        "repo": "TheHive",
         "type": "github"
       }
     },

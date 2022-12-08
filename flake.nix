@@ -12,6 +12,9 @@
     hive.url = "github:gtrunsec/hive";
 
     data-science-threat-intelligence.url = "github:gtrunsec/data-science-threat-intelligence";
+
+    thehive.url = "github:TheHive-Project/TheHive";
+    thehive.flake = false;
   };
 
   inputs = {
