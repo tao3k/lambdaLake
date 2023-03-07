@@ -6,8 +6,11 @@
 
   inputs = {
     cells-lab.url = "github:gtrunsec/cells-lab";
+    std-data-collection.follows = "cells-lab/std-data-collection";
+
+    std.follows = "cells-lab/std";
+
     org-roam-book-template.follows = "cells-lab/org-roam-book-template";
-    std.follows = "hive/std";
 
     hive.url = "github:gtrunsec/hive";
 
@@ -19,9 +22,7 @@
 
   inputs = {
     # tools
-    vast2nix.url = "github:gtrunsec/vast2nix";
     zeek2nix.url = "github:hardenedlinux/zeek2nix";
-
     # threatbus2nix.url = "github:gtrunsec/threatbus2nix";
     nixpkgs-hardenedlinux.url = "github:hardenedlinux/nixpkgs-hardenedlinux";
     nixpkgs-hardenedlinux.inputs.nixpkgs.follows = "nixpkgs";
