@@ -5,7 +5,7 @@
         "flake-parts": "flake-parts",
         "haskell-flake": "haskell-flake",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "nixpkgs"
         ]
@@ -239,7 +239,7 @@
       "inputs": {
         "nixos": "nixos_2",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "nixpkgs"
         ],
         "org-roam-book-template": "org-roam-book-template_2",
@@ -571,65 +571,28 @@
         "type": "github"
       }
     },
-    "data-science-threat-intelligence": {
-      "inputs": {
-        "cells-lab": "cells-lab_2",
-        "dataflow2nix": "dataflow2nix",
-        "julia2nix": "julia2nix",
-        "jupyenv": "jupyenv",
-        "matrix-attack-data": "matrix-attack-data",
-        "n2c": "n2c_6",
-        "nix-nomad": "nix-nomad",
-        "nixpkgs": "nixpkgs_13",
-        "std": [
-          "data-science-threat-intelligence",
-          "cells-lab",
-          "std"
-        ],
-        "std-data-collection": [
-          "data-science-threat-intelligence",
-          "cells-lab",
-          "std-data-collection"
-        ],
-        "std-utils": "std-utils",
-        "tullia": "tullia"
-      },
-      "locked": {
-        "lastModified": 1677469235,
-        "narHash": "sha256-GGSPdDzZLFWbRT06cBjQjNo/roy5YydiNV2rIB86bPo=",
-        "owner": "gtrunsec",
-        "repo": "data-science-threat-intelligence",
-        "rev": "d835c94360376d5645fa4e316e4eb712875ea1c5",
-        "type": "github"
-      },
-      "original": {
-        "owner": "gtrunsec",
-        "repo": "data-science-threat-intelligence",
-        "type": "github"
-      }
-    },
     "dataflow2nix": {
       "inputs": {
         "arion": "arion",
         "cells-lab": "cells-lab_3",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "nixpkgs"
         ],
         "std": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std"
         ],
         "std-data-collection": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std-data-collection"
         ],
         "tullia": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia"
         ]
       },
@@ -644,6 +607,41 @@
       "original": {
         "owner": "GTrunSec",
         "repo": "dataflow2nix",
+        "type": "github"
+      }
+    },
+    "desci": {
+      "inputs": {
+        "cells-lab": "cells-lab_2",
+        "dataflow2nix": "dataflow2nix",
+        "julia2nix": "julia2nix",
+        "jupyenv": "jupyenv",
+        "matrix-attack-data": "matrix-attack-data",
+        "n2c": "n2c_6",
+        "nix-nomad": "nix-nomad",
+        "nixpkgs": "nixpkgs_13",
+        "std": [
+          "std"
+        ],
+        "std-data-collection": [
+          "desci",
+          "cells-lab",
+          "std-data-collection"
+        ],
+        "std-utils": "std-utils",
+        "tullia": "tullia"
+      },
+      "locked": {
+        "lastModified": 1677469235,
+        "narHash": "sha256-GGSPdDzZLFWbRT06cBjQjNo/roy5YydiNV2rIB86bPo=",
+        "owner": "gtrunsec",
+        "repo": "desci",
+        "rev": "d835c94360376d5645fa4e316e4eb712875ea1c5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gtrunsec",
+        "repo": "desci",
         "type": "github"
       }
     },
@@ -677,13 +675,13 @@
     "devshell_2": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "nixpkgs"
@@ -706,14 +704,14 @@
     "devshell_3": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
@@ -737,14 +735,14 @@
     "devshell_4": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
@@ -768,14 +766,14 @@
     "devshell_5": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
@@ -799,13 +797,13 @@
     "devshell_6": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "nixpkgs"
@@ -977,13 +975,13 @@
     "dmerge_2": {
       "inputs": {
         "nixlib": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "nixpkgs"
         ],
         "yants": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "yants"
@@ -1006,14 +1004,14 @@
     "dmerge_3": {
       "inputs": {
         "nixlib": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
           "nixpkgs"
         ],
         "yants": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
@@ -1037,14 +1035,14 @@
     "dmerge_4": {
       "inputs": {
         "nixlib": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
           "nixpkgs"
         ],
         "yants": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
@@ -1068,14 +1066,14 @@
     "dmerge_5": {
       "inputs": {
         "nixlib": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
           "nixpkgs"
         ],
         "yants": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
@@ -1099,13 +1097,13 @@
     "dmerge_6": {
       "inputs": {
         "nixlib": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "nixpkgs"
         ],
         "yants": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "yants"
@@ -1573,7 +1571,7 @@
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "arion",
           "nixpkgs"
@@ -2099,7 +2097,7 @@
     "gitignore_2": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "pre-commit-hooks",
           "nixpkgs"
@@ -2282,18 +2280,18 @@
     "ihaskell": {
       "inputs": {
         "flake-compat": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "flake-compat"
         ],
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "flake-utils"
         ],
         "hls": "hls",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "nixpkgs"
         ]
@@ -2352,7 +2350,7 @@
     "incl_2": {
       "inputs": {
         "nixlib": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "nixpkgs"
@@ -2375,7 +2373,7 @@
     "incl_3": {
       "inputs": {
         "nixlib": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
@@ -2399,7 +2397,7 @@
     "incl_4": {
       "inputs": {
         "nixlib": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
@@ -2423,7 +2421,7 @@
     "incl_5": {
       "inputs": {
         "nixlib": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
@@ -2447,7 +2445,7 @@
     "incl_6": {
       "inputs": {
         "nixlib": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "nixpkgs"
@@ -2540,17 +2538,17 @@
         "cells-lab": "cells-lab_4",
         "nix-filter": "nix-filter_5",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "nixpkgs"
         ],
         "std": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std"
         ],
         "std-data-collection": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std-data-collection"
@@ -2577,7 +2575,7 @@
         "ihaskell": "ihaskell",
         "nix-dart": "nix-dart",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "nixpkgs"
         ],
         "nixpkgs-stable": "nixpkgs-stable",
@@ -2606,11 +2604,11 @@
       "inputs": {
         "cells-lab": "cells-lab_5",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "nixpkgs"
         ],
         "std": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std"
@@ -2740,13 +2738,13 @@
     "n2c_2": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "nixpkgs"
@@ -2769,14 +2767,14 @@
     "n2c_3": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
@@ -2800,14 +2798,14 @@
     "n2c_4": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
@@ -2831,14 +2829,14 @@
     "n2c_5": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
@@ -2863,7 +2861,7 @@
       "inputs": {
         "flake-utils": "flake-utils_18",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "nixpkgs"
         ]
       },
@@ -2884,13 +2882,13 @@
     "n2c_7": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "nixpkgs"
@@ -2969,12 +2967,12 @@
     "nix-dart": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "nixpkgs"
         ],
@@ -3306,19 +3304,19 @@
     "nixago_2": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "flake-utils"
         ],
         "nixago-exts": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "blank"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "nixpkgs"
@@ -3341,21 +3339,21 @@
     "nixago_3": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
           "flake-utils"
         ],
         "nixago-exts": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
           "blank"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
@@ -3379,21 +3377,21 @@
     "nixago_4": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
           "flake-utils"
         ],
         "nixago-exts": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
           "blank"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
@@ -3417,21 +3415,21 @@
     "nixago_5": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
           "flake-utils"
         ],
         "nixago-exts": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
           "blank"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
@@ -3455,19 +3453,19 @@
     "nixago_6": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "flake-utils"
         ],
         "nixago-exts": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "blank"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "nixpkgs"
@@ -4602,18 +4600,18 @@
     "opam-nix": {
       "inputs": {
         "flake-compat": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "flake-compat"
         ],
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "flake-utils"
         ],
         "mirage-opam-overlays": "mirage-opam-overlays",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "nixpkgs"
         ],
@@ -4671,7 +4669,7 @@
     "opam2json": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "opam-nix",
           "nixpkgs"
@@ -4726,7 +4724,7 @@
         "flake-utils": "flake-utils_5",
         "nix-filter": "nix-filter_2",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "nixpkgs"
         ],
@@ -4754,7 +4752,7 @@
         "flake-utils": "flake-utils_8",
         "nix-filter": "nix-filter_3",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "nixpkgs"
@@ -4783,7 +4781,7 @@
         "flake-utils": "flake-utils_11",
         "nix-filter": "nix-filter_4",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "nixpkgs"
@@ -4812,7 +4810,7 @@
         "flake-utils": "flake-utils_16",
         "nix-filter": "nix-filter_6",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "nixpkgs"
@@ -5102,14 +5100,14 @@
     "paisano_2": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "nixpkgs"
         ],
         "nosys": "nosys_2",
         "yants": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "yants"
@@ -5132,7 +5130,7 @@
     "paisano_3": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
@@ -5140,7 +5138,7 @@
         ],
         "nosys": "nosys_3",
         "yants": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
@@ -5164,7 +5162,7 @@
     "paisano_4": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
@@ -5172,7 +5170,7 @@
         ],
         "nosys": "nosys_4",
         "yants": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
@@ -5226,12 +5224,12 @@
     "poetry2nix": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "nixpkgs"
         ]
@@ -5281,14 +5279,14 @@
     "pop_2": {
       "inputs": {
         "flake-compat": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "xnlib",
           "blank"
         ],
         "nixlib": "nixlib_4",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "xnlib",
           "blank"
@@ -5311,14 +5309,14 @@
     "pre-commit-hooks": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "ihaskell",
           "hls",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "ihaskell",
           "hls",
@@ -5343,13 +5341,13 @@
       "inputs": {
         "flake-compat": "flake-compat_7",
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "flake-utils"
         ],
         "gitignore": "gitignore_2",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "nixpkgs"
         ],
@@ -5388,7 +5386,7 @@
     "root": {
       "inputs": {
         "cells-lab": "cells-lab",
-        "data-science-threat-intelligence": "data-science-threat-intelligence",
+        "desci": "desci",
         "hive": "hive",
         "nixos": [
           "hive",
@@ -5418,12 +5416,12 @@
     "rust-overlay": {
       "inputs": {
         "flake-utils": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "flake-utils"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "jupyenv",
           "nixpkgs"
         ]
@@ -5532,12 +5530,12 @@
     "std-data-collection_2": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "nixpkgs"
         ],
         "std": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std"
         ]
@@ -5559,13 +5557,13 @@
     "std-data-collection_3": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "nixpkgs"
         ],
         "std": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std"
@@ -5588,13 +5586,13 @@
     "std-data-collection_4": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "nixpkgs"
         ],
         "std": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std"
@@ -5644,11 +5642,11 @@
     "std-utils": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "nixpkgs"
         ],
         "std": [
-          "data-science-threat-intelligence",
+          "desci",
           "std"
         ]
       },
@@ -5669,7 +5667,7 @@
     "std_2": {
       "inputs": {
         "arion": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "blank"
@@ -5680,13 +5678,13 @@
         "flake-utils": "flake-utils_6",
         "incl": "incl_2",
         "makes": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "blank"
         ],
         "microvm": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "blank"
@@ -5694,7 +5692,7 @@
         "n2c": "n2c_2",
         "nixago": "nixago_2",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "nixpkgs"
         ],
@@ -5718,7 +5716,7 @@
     "std_3": {
       "inputs": {
         "arion": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
@@ -5730,14 +5728,14 @@
         "flake-utils": "flake-utils_9",
         "incl": "incl_3",
         "makes": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
           "blank"
         ],
         "microvm": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
@@ -5746,7 +5744,7 @@
         "n2c": "n2c_3",
         "nixago": "nixago_3",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "nixpkgs"
@@ -5771,7 +5769,7 @@
     "std_4": {
       "inputs": {
         "arion": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
@@ -5783,14 +5781,14 @@
         "flake-utils": "flake-utils_12",
         "incl": "incl_4",
         "makes": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
           "blank"
         ],
         "microvm": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
@@ -5799,7 +5797,7 @@
         "n2c": "n2c_4",
         "nixago": "nixago_4",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "nixpkgs"
@@ -5824,7 +5822,7 @@
     "std_5": {
       "inputs": {
         "arion": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
@@ -5836,14 +5834,14 @@
         "flake-utils": "flake-utils_17",
         "incl": "incl_5",
         "makes": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
           "blank"
         ],
         "microvm": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
@@ -5852,7 +5850,7 @@
         "n2c": "n2c_5",
         "nixago": "nixago_5",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "nixpkgs"
@@ -5877,7 +5875,7 @@
     "std_6": {
       "inputs": {
         "arion": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "blank"
@@ -5888,13 +5886,13 @@
         "flake-utils": "flake-utils_20",
         "incl": "incl_6",
         "makes": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "blank"
         ],
         "microvm": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "blank"
@@ -6080,15 +6078,15 @@
     "tullia": {
       "inputs": {
         "nix-nomad": [
-          "data-science-threat-intelligence",
+          "desci",
           "nix-nomad"
         ],
         "nix2container": [
-          "data-science-threat-intelligence",
+          "desci",
           "n2c"
         ],
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "nixpkgs"
         ],
         "std": "std_6"
@@ -6188,12 +6186,12 @@
         "nixlib": "nixlib_3",
         "pop": "pop_2",
         "std": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std"
         ],
         "std-data-collection": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std-data-collection"
         ]
@@ -6217,7 +6215,7 @@
         "nix-std": "nix-std_3",
         "nixlib": "nixlib_5",
         "std": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std"
@@ -6242,7 +6240,7 @@
         "nix-std": "nix-std_4",
         "nixlib": "nixlib_6",
         "std": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std"
@@ -6268,13 +6266,13 @@
         "nix-std": "nix-std_5",
         "nixlib": "nixlib_7",
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "nixpkgs"
         ],
         "std": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std"
@@ -6298,7 +6296,7 @@
     "xnlib_6": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "xnlib",
@@ -6392,7 +6390,7 @@
     "yants_2": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "cells-lab",
           "std",
           "nixpkgs"
@@ -6415,7 +6413,7 @@
     "yants_3": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "dataflow2nix",
           "cells-lab",
           "std",
@@ -6439,7 +6437,7 @@
     "yants_4": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "julia2nix",
           "cells-lab",
           "std",
@@ -6463,7 +6461,7 @@
     "yants_5": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "matrix-attack-data",
           "cells-lab",
           "std",
@@ -6487,7 +6485,7 @@
     "yants_6": {
       "inputs": {
         "nixpkgs": [
-          "data-science-threat-intelligence",
+          "desci",
           "tullia",
           "std",
           "nixpkgs"

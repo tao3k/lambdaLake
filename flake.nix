@@ -14,7 +14,8 @@
 
     hive.url = "github:gtrunsec/hive";
 
-    data-science-threat-intelligence.url = "github:gtrunsec/data-science-threat-intelligence";
+    desci.url = "github:gtrunsec/desci";
+    desci.inputs.std.follows = "std";
 
     thehive.url = "github:TheHive-Project/TheHive";
     thehive.flake = false;
