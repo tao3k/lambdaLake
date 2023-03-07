@@ -19,11 +19,11 @@
     },
     "flake-utils": {
       "locked": {
-        "lastModified": 1667077288,
-        "narHash": "sha256-bdC8sFNDpT0HK74u9fUkpbf1MEzVYJ+ka7NXCdgBoaA=",
+        "lastModified": 1667395993,
+        "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "6ee9ebb6b1ee695d2cacc4faa053a7b9baa76817",
+        "rev": "5aed5285a952e0b949eb3ba02c12fa4fcfef535f",
         "type": "github"
       },
       "original": {
@@ -34,17 +34,17 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1668650906,
-        "narHash": "sha256-JuiYfDO23O8oxUUOmhQflmOoJovyC5G4RjcYQMQjrRE=",
+        "lastModified": 1675940568,
+        "narHash": "sha256-epG6pOT9V0kS+FUqd7R6/CWkgnZx2DMT5Veqo+y6G3c=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3a86856a13c88c8c64ea32082a851fefc79aa700",
+        "rev": "6ccc4a59c3f1b56d039d93da52696633e641bc71",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3a86856a13c88c8c64ea32082a851fefc79aa700",
+        "rev": "6ccc4a59c3f1b56d039d93da52696633e641bc71",
         "type": "github"
       }
     },
@@ -55,11 +55,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1668423201,
-        "narHash": "sha256-xflwwNUqHYSsfqrXkTmu0lUTPh8ZrA1igcrrc6P3XVc=",
+        "lastModified": 1677562139,
+        "narHash": "sha256-J39FdMjECbWGSXVHmEdyGBD2aRYGhg9bWEPf1/ZR47k=",
         "owner": "serokell",
         "repo": "nix-npm-buildpackage",
-        "rev": "200e47aabd2b55993561c47e8390c89bdeb18b8a",
+        "rev": "d45296118cae672982f192451dd3e19fa6c2d068",
         "type": "github"
       },
       "original": {
@@ -84,11 +84,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1667335016,
-        "narHash": "sha256-WyVh25dYLAhXk0twud9+etQBjK0TF8odC099uyMirX4=",
+        "lastModified": 1675083208,
+        "narHash": "sha256-+sSFhSpV2jckr1qYlX/SaxQ6IdpagD6o4rru/3HAl0I=",
         "owner": "zaninime",
         "repo": "sbt-derivation",
-        "rev": "718fd312440a3b604c1716925716b8d0cbc7a64e",
+        "rev": "92d6d6d825e3f6ae5642d1cce8ff571c3368aaf7",
         "type": "github"
       },
       "original": {
