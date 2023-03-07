@@ -7,5 +7,4 @@
     inputs.cells.common.lib.__inputs__.npm-buildpackage.overlays.default
   ];
   mkCompose = import ./dockerComposes/mkCompose.nix;
-
 }

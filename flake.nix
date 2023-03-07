@@ -1,4 +1,7 @@
 {
+  nixConfig.extra-substituters = ["https://zeek.cachix.org"];
+  nixConfig.extra-trusted-public-keys = ["zeek.cachix.org-1:Jv0hB/P5eF7RQUZgSQiVqzqzgweP29YIwpSiukGlDWQ="];
+
   inputs = {
     nixpkgs.follows = "cells-lab/nixpkgs";
     nixos.follows = "hive/nixos";
@@ -16,17 +19,6 @@
 
     desci.url = "github:gtrunsec/desci";
     desci.inputs.std.follows = "std";
-
-    thehive.url = "github:TheHive-Project/TheHive";
-    thehive.flake = false;
-  };
-
-  inputs = {
-    # tools
-    zeek2nix.url = "github:hardenedlinux/zeek2nix";
-    # threatbus2nix.url = "github:gtrunsec/threatbus2nix";
-    nixpkgs-hardenedlinux.url = "github:hardenedlinux/nixpkgs-hardenedlinux";
-    nixpkgs-hardenedlinux.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
@@ -94,7 +86,4 @@
     } {
       nixosConfigurations = hive.lib.nixosConfigurations "nixosConfigurations" self;
     };
-
-  nixConfig.extra-substituters = "https://zeek.cachix.org";
-  nixConfig.extra-trusted-public-keys = "zeek.cachix.org-1:Jv0hB/P5eF7RQUZgSQiVqzqzgweP29YIwpSiukGlDWQ=";
 }

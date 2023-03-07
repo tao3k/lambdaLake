@@ -9,7 +9,7 @@ in {
     name = "gen";
     runtimeInputs = [cell.lib.nixpkgs.bower2nix];
     text = ''
-    bower2nix ${cell.lib.nixpkgs.thehive-patchSrc}/frontend/bower.json nix/thehive/packages/bower-generated.nix
+      bower2nix ${cell.lib.nixpkgs.thehive-patchSrc}/frontend/bower.json nix/thehive/packages/bower-generated.nix
     '';
   };
 }
