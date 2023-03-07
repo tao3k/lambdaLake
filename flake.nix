@@ -2,6 +2,8 @@
   nixConfig.extra-substituters = ["https://zeek.cachix.org"];
   nixConfig.extra-trusted-public-keys = ["zeek.cachix.org-1:Jv0hB/P5eF7RQUZgSQiVqzqzgweP29YIwpSiukGlDWQ="];
 
+  description = "DataLake";
+
   inputs = {
     nixpkgs.follows = "cells-lab/nixpkgs";
     nixos.follows = "hive/nixos";
@@ -67,7 +69,6 @@
           (data "nixosConfigurations")
 
           (files "configFiles")
-          (files "containerJobs")
           (files "dockerComposes")
           (data "schemaProfiles")
 
@@ -79,6 +80,7 @@
         ]
         ++ [
           (containers "containers")
+          (files "containerJobs")
         ];
     } {
       devShells = inputs.std.harvest inputs.self [["automation" "devshells"]];

@@ -21,6 +21,8 @@
 
     zeek2nix.url = "github:hardenedlinux/zeek2nix";
     zeek2nix.inputs.nixpkgs.follows = "nixpkgs";
+
+    vast.url = "github:tenzir/vast";
   };
   outputs = {
     self,
