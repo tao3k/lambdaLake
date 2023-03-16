@@ -5,22 +5,26 @@
   description = "DataLake";
 
   inputs = {
-    nixpkgs.follows = "cells-lab/nixpkgs";
+    nixpkgs.follows = "std-ext/nixpkgs";
     nixos.follows = "hive/nixos";
   };
 
   inputs = {
-    cells-lab.url = "github:gtrunsec/cells-lab";
-    std-data-collection.follows = "cells-lab/std-data-collection";
+    std-ext.url = "github:gtrunsec/std-ext";
+    std-data-collection.follows = "std-ext/std-data-collection";
 
-    std.follows = "cells-lab/std";
+    std.follows = "std-ext/std";
 
-    org-roam-book-template.follows = "cells-lab/org-roam-book-template";
+    org-roam-book-template.follows = "std-ext/org-roam-book-template";
 
     hive.url = "github:gtrunsec/hive";
 
     desci.url = "github:gtrunsec/desci";
     desci.inputs.std.follows = "std";
+
+    dataflow2nix.url = "github:gtrunsec/dataflow2nix";
+    dataflow2nix.inputs.nixpkgs.follows = "nixpkgs";
+    dataflow2nix.inputs.std.follows = "std";
   };
 
   outputs = {

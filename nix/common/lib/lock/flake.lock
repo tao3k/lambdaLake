@@ -49,29 +49,6 @@
     },
     "cells-lab": {
       "inputs": {
-        "nixos": "nixos",
-        "nixpkgs": "nixpkgs_2",
-        "org-roam-book-template": "org-roam-book-template",
-        "std": "std",
-        "std-data-collection": "std-data-collection",
-        "xnlib": "xnlib"
-      },
-      "locked": {
-        "lastModified": 1676852466,
-        "narHash": "sha256-8gMZh0DR+S9ru+vw7y5HudadNATq+kPHxhKogxPLlf4=",
-        "owner": "GTrunSec",
-        "repo": "cells-lab",
-        "rev": "b0e649aa16a4c931f50b42280589a360ecd055f8",
-        "type": "github"
-      },
-      "original": {
-        "owner": "GTrunSec",
-        "repo": "cells-lab",
-        "type": "github"
-      }
-    },
-    "cells-lab_2": {
-      "inputs": {
         "nixos": "nixos_2",
         "nixpkgs": "nixpkgs_5",
         "org-roam-book-template": "org-roam-book-template_2",
@@ -127,13 +104,13 @@
       "inputs": {
         "flake-utils": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "flake-utils"
         ],
         "nixpkgs": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "nixpkgs"
         ]
@@ -185,13 +162,13 @@
       "inputs": {
         "nixlib": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "nixpkgs"
         ],
         "yants": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "yants"
         ]
@@ -449,7 +426,7 @@
       "inputs": {
         "nixlib": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "nixpkgs"
         ]
@@ -511,23 +488,23 @@
       "inputs": {
         "flake-utils": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "flake-utils"
         ],
         "nixpkgs": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1665039323,
-        "narHash": "sha256-SAh3ZjFGsaCI8FRzXQyp56qcGdAqgKEfJWPCQ0Sr7tQ=",
+        "lastModified": 1677330646,
+        "narHash": "sha256-hUYCwJneMjnxTvj30Fjow6UMJUITqHlpUGpXMPXUJsU=",
         "owner": "nlewo",
         "repo": "nix2container",
-        "rev": "b008fe329ffb59b67bf9e7b08ede6ee792f2741a",
+        "rev": "ebca8f58d450cae1a19c07701a5a8ae40afc9efc",
         "type": "github"
       },
       "original": {
@@ -610,38 +587,23 @@
         "type": "github"
       }
     },
-    "nix-std": {
-      "locked": {
-        "lastModified": 1671250799,
-        "narHash": "sha256-uPIakP98gOf6504NtrAb2/0O0BgRRXNShM0PTV8z+T0=",
-        "owner": "chessai",
-        "repo": "nix-std",
-        "rev": "b300fd6dfeae8cc331c7d8cde0e81b404d50d40c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "chessai",
-        "repo": "nix-std",
-        "type": "github"
-      }
-    },
     "nixago": {
       "inputs": {
         "flake-utils": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "flake-utils"
         ],
         "nixago-exts": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "blank"
         ],
         "nixpkgs": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "nixpkgs"
         ]
@@ -692,21 +654,6 @@
       "original": {
         "owner": "nix-community",
         "repo": "nixago",
-        "type": "github"
-      }
-    },
-    "nixlib": {
-      "locked": {
-        "lastModified": 1676163193,
-        "narHash": "sha256-6cTwPLtRHsRrIlKnEg3gQ9L+MYdx87eHdRqlTUi4H8Y=",
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "rev": "d3e61f845dbbb77f10900603993c6f00bdfa9fd4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
         "type": "github"
       }
     },
@@ -776,10 +723,9 @@
     },
     "nixpkgs-hardenedlinux": {
       "inputs": {
-        "cells-lab": "cells-lab",
         "nixos": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "nixos"
         ],
         "nixpkgs": [
@@ -787,26 +733,27 @@
         ],
         "org-roam-book-template": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "org-roam-book-template"
         ],
         "std": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std"
         ],
         "std-data-collection": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std-data-collection"
-        ]
+        ],
+        "std-ext": "std-ext"
       },
       "locked": {
-        "lastModified": 1677304725,
-        "narHash": "sha256-4tPDJ84xNnKTwDpHl1uPaA5QAl5OzoMp62jPnji/uNM=",
+        "lastModified": 1679010471,
+        "narHash": "sha256-CjSSgsDD2iwGXijR7s/m361QLkTcbzhkD5bja2w5DWw=",
         "owner": "hardenedlinux",
         "repo": "nixpkgs-hardenedlinux",
-        "rev": "c3dc20142368cf86818a0290504791dd4347b504",
+        "rev": "50e24596ab5ed735917455b7c0670bdd9bc44717",
         "type": "github"
       },
       "original": {
@@ -952,7 +899,7 @@
         "nix-filter": "nix-filter",
         "nixpkgs": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "nixpkgs"
         ],
         "ox-hugo": "ox-hugo"
@@ -1035,29 +982,57 @@
       "inputs": {
         "nixpkgs": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "nixpkgs"
         ],
         "nosys": "nosys",
         "yants": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "yants"
         ]
       },
       "locked": {
-        "lastModified": 1676683211,
-        "narHash": "sha256-5pkyVT4UF89QhEGH/vb7JgbGsOW76bTDtdNETUJtAqA=",
-        "owner": "divnix",
-        "repo": "paisano",
-        "rev": "63b36b54d5368722e386e16f8e0827dc75165f06",
+        "lastModified": 1678949904,
+        "narHash": "sha256-oAoF66hYYz1RPh3lEwb9/4e4iyBAfTbQKZRRQ8gP0Ds=",
+        "owner": "paisano-nix",
+        "repo": "core",
+        "rev": "88f2aff10a5064551d1d4cb86800d17084489ce3",
         "type": "github"
       },
       "original": {
-        "owner": "divnix",
-        "repo": "paisano",
+        "owner": "paisano-nix",
+        "repo": "core",
+        "type": "github"
+      }
+    },
+    "paisano-tui": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs-hardenedlinux",
+          "std-ext",
+          "std",
+          "blank"
+        ],
+        "std": [
+          "nixpkgs-hardenedlinux",
+          "std-ext",
+          "std"
+        ]
+      },
+      "locked": {
+        "lastModified": 1677533603,
+        "narHash": "sha256-Nq1dH/qn7Wg/Tj1+id+ZM3o0fzqonW73jAgY3mCp35M=",
+        "owner": "paisano-nix",
+        "repo": "tui",
+        "rev": "802958d123b0a5437441be0cab1dee487b0ed3eb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paisano-nix",
+        "repo": "tui",
         "type": "github"
       }
     },
@@ -1098,7 +1073,7 @@
       "inputs": {
         "arion": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "blank"
         ],
@@ -1109,13 +1084,13 @@
         "incl": "incl",
         "makes": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "blank"
         ],
         "microvm": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "blank"
         ],
@@ -1123,18 +1098,19 @@
         "nixago": "nixago",
         "nixpkgs": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "nixpkgs"
         ],
         "paisano": "paisano",
+        "paisano-tui": "paisano-tui",
         "yants": "yants"
       },
       "locked": {
-        "lastModified": 1676694799,
-        "narHash": "sha256-PqvYBIQa9ZpjLznXF0f1zitPIHYwEScy9hbuxgSwHJY=",
+        "lastModified": 1678751010,
+        "narHash": "sha256-XFOr/05l0JwpFILygzVjix+asC+WaNFtYTKh01dRbPQ=",
         "owner": "divnix",
         "repo": "std",
-        "rev": "1264bbb6d7869d409e5a146957d170744d809006",
+        "rev": "b05ec066ea52136cefbccfdd685c1ae922454936",
         "type": "github"
       },
       "original": {
@@ -1147,12 +1123,12 @@
       "inputs": {
         "nixpkgs": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "nixpkgs"
         ],
         "std": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std"
         ]
       },
@@ -1167,6 +1143,28 @@
       "original": {
         "owner": "divnix",
         "repo": "std-data-collection",
+        "type": "github"
+      }
+    },
+    "std-ext": {
+      "inputs": {
+        "nixos": "nixos",
+        "nixpkgs": "nixpkgs_2",
+        "org-roam-book-template": "org-roam-book-template",
+        "std": "std",
+        "std-data-collection": "std-data-collection"
+      },
+      "locked": {
+        "lastModified": 1678956529,
+        "narHash": "sha256-LwyFTOqQWBjNzolorkHtEi/IFWdd8URsutcN+SrBw0c=",
+        "owner": "GTrunSec",
+        "repo": "std-ext",
+        "rev": "51f1379a156e9806af0805b41921bec80b5ac532",
+        "type": "github"
+      },
+      "original": {
+        "owner": "GTrunSec",
+        "repo": "std-ext",
         "type": "github"
       }
     },
@@ -1244,40 +1242,16 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1677880833,
-        "narHash": "sha256-732gon4960/5aXpAPDxFKw+lOAShOiPWOi8SR5kTQ14=",
+        "lastModified": 1679007493,
+        "narHash": "sha256-PNrxYnFQSimm4SJgCy1qDLaWGbQ+G/cDiiKcAzryhiQ=",
         "owner": "tenzir",
         "repo": "vast",
-        "rev": "cc393580f1a8f5234be232885f2fcf5e0a8a2db8",
+        "rev": "ba52987e6eef5e558127a928d0cf01cbf1738044",
         "type": "github"
       },
       "original": {
         "owner": "tenzir",
         "repo": "vast",
-        "type": "github"
-      }
-    },
-    "xnlib": {
-      "inputs": {
-        "nix-std": "nix-std",
-        "nixlib": "nixlib",
-        "std": [
-          "nixpkgs-hardenedlinux",
-          "cells-lab",
-          "std"
-        ]
-      },
-      "locked": {
-        "lastModified": 1676679630,
-        "narHash": "sha256-LIpBpunTlKRIs0mV2u2baNJMMph4fh1vG8T95lw/TQ0=",
-        "owner": "gtrunsec",
-        "repo": "xnlib",
-        "rev": "bd20acd464f55ed34ff45ee8c8ae16721571337b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "gtrunsec",
-        "repo": "xnlib",
         "type": "github"
       }
     },
@@ -1285,7 +1259,7 @@
       "inputs": {
         "nixpkgs": [
           "nixpkgs-hardenedlinux",
-          "cells-lab",
+          "std-ext",
           "std",
           "nixpkgs"
         ]
@@ -1329,7 +1303,7 @@
     },
     "zeek2nix": {
       "inputs": {
-        "cells-lab": "cells-lab_2",
+        "cells-lab": "cells-lab",
         "nixos": "nixos_3",
         "nixpkgs": [
           "nixpkgs"

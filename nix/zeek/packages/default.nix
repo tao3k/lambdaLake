@@ -2,17 +2,16 @@
   inputs,
   cell,
 }: let
-  inherit (inputs) zeek2nix nixpkgs-hardenedlinux nixpkgs;
+  inherit (inputs.cells.common.lib.__inputs__) nixpkgs-hardenedlinux zeek2nix;
+  inherit (inputs) nixpkgs;
 in {
-  zeek = zeek2nix.packages;
-
   inherit
-    (zeek2nix.packages.${nixpkgs.system})
-    zeek-release
+    (zeek2nix.packages)
+    zeek
     zeek-latest
     ;
   inherit
-    (nixpkgs-hardenedlinux.packages.${nixpkgs.system})
+    (nixpkgs-hardenedlinux.packages)
     btest
     zed
     zeekscript

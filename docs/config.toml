@@ -1,6 +1,6 @@
 baseURL = "https://exquisite-meringue-7af06d.netlify.app/"
 languageCode = "en-us"
-title = "Lambda Hunt"
+title = "Lambda DataLake"
 theme = "cortex"
 
 [params]
